@@ -1,0 +1,18 @@
+# Virtuelle Umgebungen
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Musterlösungen bleiben lokal und werden nicht versioniert
+**/uebungen/loesungen/
+
+# Betriebssystem / Editoren
+.DS_Store
+Thumbs.db
+.vscode/
