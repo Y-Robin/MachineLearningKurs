@@ -20,12 +20,25 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 │       ├── 01_fragenkatalog_ml_grundlagen.ipynb
 │       ├── 02_fallstudien_methodenwahl.ipynb
 │       └── loesungen/
-└── set3-datenanalyse-und-ml/
-    ├── 01_pandas_basics.ipynb
-    ├── 02_scikit_learn_basics.ipynb
+├── set3-datenanalyse-und-visualisierung/
+│   ├── 01_pandas_basics.ipynb
+│   ├── 02_eda_palmer_penguins.ipynb
+│   ├── 03_eda_wine_quality.ipynb
+│   ├── 04_eda_predictive_maintenance.ipynb
+│   ├── daten/
+│   │   ├── palmer_penguins.csv
+│   │   ├── wine_quality_red.csv
+│   │   ├── ai4i_predictive_maintenance.csv
+│   │   └── README.md
+│   └── uebungen/
+│       ├── 01_uebungen_pandas.ipynb
+│       ├── 02_fragen_datenanalyse_visualisierung.ipynb
+│       ├── 03_programmieruebungen_eda.ipynb
+│       └── loesungen/
+└── set4-machine-learning-mit-scikit-learn/
+    ├── 01_scikit_learn_basics.ipynb
     └── uebungen/
-        ├── 01_uebungen_pandas.ipynb
-        ├── 02_uebungen_scikit_learn.ipynb
+        ├── 01_uebungen_scikit_learn.ipynb
         └── loesungen/
 ```
 
@@ -97,3 +110,5 @@ Die Aufgaben eines Sets liegen jeweils im Unterordner `uebungen`. Zugehörige Mu
 ## Lizenz / Nutzung
 
 Die Materialien sind als begleitende Beispiele für den ML-Kurs gedacht und können innerhalb des Kurses angepasst und erweitert werden.
+
+Für externe Beispieldaten gelten die jeweils im Datenordner dokumentierten Lizenzen und Quellenangaben.
