@@ -35,15 +35,23 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 │       ├── 02_fragen_datenanalyse_visualisierung.ipynb
 │       ├── 03_programmieruebungen_eda.ipynb
 │       └── loesungen/
-└── set4-machine-learning-mit-scikit-learn/
-    ├── 01_scikit_learn_basics.ipynb
+├── set4-machine-learning-mit-scikit-learn/
+│   ├── 01_daten_verstehen_und_visualisieren.ipynb
+│   ├── 02_sklearn_transformer_basics.ipynb
+│   ├── 03_preprocessing_mit_pipeline.ipynb
+│   └── uebungen/
+│       ├── 01_uebungen_datenanalyse.ipynb
+│       ├── 02_fragen_preprocessing_pipeline.ipynb
+│       ├── 03_programmieruebungen_preprocessing.ipynb
+│       └── loesungen/
+└── set5-klassifikation-mit-scikit-learn/
+    ├── 01_scikit_learn_klassifikation_basics.ipynb
     ├── 02_kontrollierte_klassifikationsdaten.ipynb
-    ├── 03_columntransformer_gemischte_daten.ipynb
+    ├── 03_klassifikation_gemischte_daten.ipynb
     ├── 04_splits_cross_validation_leakage.ipynb
     └── uebungen/
-        ├── 01_uebungen_scikit_learn.ipynb
-        ├── 02_fragen_preprocessing_pipeline.ipynb
-        ├── 03_programmieruebungen_pipeline.ipynb
+        ├── 01_uebungen_klassifikation.ipynb
+        ├── 02_programmieruebungen_klassifikation.ipynb
         └── loesungen/
 ```
 
