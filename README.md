@@ -37,8 +37,13 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 │       └── loesungen/
 └── set4-machine-learning-mit-scikit-learn/
     ├── 01_scikit_learn_basics.ipynb
+    ├── 02_kontrollierte_klassifikationsdaten.ipynb
+    ├── 03_columntransformer_gemischte_daten.ipynb
+    ├── 04_splits_cross_validation_leakage.ipynb
     └── uebungen/
         ├── 01_uebungen_scikit_learn.ipynb
+        ├── 02_fragen_preprocessing_pipeline.ipynb
+        ├── 03_programmieruebungen_pipeline.ipynb
         └── loesungen/
 ```
 
