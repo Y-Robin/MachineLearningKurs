@@ -49,12 +49,13 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
     ├── 02_m_und_b_interaktiv.ipynb
     ├── 03_logistische_regression.ipynb
     ├── 04_pipeline_palmer_penguins.ipynb
+    ├── 05_xai_koeffizienten.ipynb
     ├── daten/
     │   └── README.md
     └── uebungen/
         ├── 01_uebungen_lineare_regression.ipynb
         ├── 02_uebungen_logistische_regression.ipynb
-        ├── 03_uebungen_pipeline_penguins.ipynb
+        ├── 03_uebungen_breast_cancer_xai.ipynb
         ├── 04_fragen_regression_klassifikation.ipynb
         └── loesungen/
 ```
