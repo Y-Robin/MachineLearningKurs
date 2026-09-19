@@ -1,6 +1,7 @@
 # Notebook-Umgebung
 jupyterlab>=4.2,<5
 ipykernel>=6.29,<7
+ipywidgets>=8.1,<9
 
 # Datenanalyse und Visualisierung
 numpy>=2.0,<3

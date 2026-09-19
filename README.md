@@ -44,14 +44,18 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 │       ├── 02_fragen_preprocessing_pipeline.ipynb
 │       ├── 03_programmieruebungen_preprocessing.ipynb
 │       └── loesungen/
-└── set5-klassifikation-mit-scikit-learn/
-    ├── 01_scikit_learn_klassifikation_basics.ipynb
-    ├── 02_kontrollierte_klassifikationsdaten.ipynb
-    ├── 03_klassifikation_gemischte_daten.ipynb
-    ├── 04_splits_cross_validation_leakage.ipynb
+└── set5-lineare-und-logistische-regression/
+    ├── 01_lineare_regression.ipynb
+    ├── 02_m_und_b_interaktiv.ipynb
+    ├── 03_logistische_regression.ipynb
+    ├── 04_pipeline_palmer_penguins.ipynb
+    ├── daten/
+    │   └── README.md
     └── uebungen/
-        ├── 01_uebungen_klassifikation.ipynb
-        ├── 02_programmieruebungen_klassifikation.ipynb
+        ├── 01_uebungen_lineare_regression.ipynb
+        ├── 02_uebungen_logistische_regression.ipynb
+        ├── 03_uebungen_pipeline_penguins.ipynb
+        ├── 04_fragen_regression_klassifikation.ipynb
         └── loesungen/
 ```
 
