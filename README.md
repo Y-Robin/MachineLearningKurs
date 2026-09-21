@@ -44,19 +44,27 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 │       ├── 02_fragen_preprocessing_pipeline.ipynb
 │       ├── 03_programmieruebungen_preprocessing.ipynb
 │       └── loesungen/
-└── set5-lineare-und-logistische-regression/
-    ├── 01_lineare_regression.ipynb
-    ├── 02_m_und_b_interaktiv.ipynb
-    ├── 03_logistische_regression.ipynb
-    ├── 04_pipeline_palmer_penguins.ipynb
-    ├── 05_xai_koeffizienten.ipynb
-    ├── daten/
-    │   └── README.md
+├── set5-lineare-und-logistische-regression/
+│   ├── 01_lineare_regression.ipynb
+│   ├── 02_m_und_b_interaktiv.ipynb
+│   ├── 03_logistische_regression.ipynb
+│   ├── 04_pipeline_palmer_penguins.ipynb
+│   ├── 05_xai_koeffizienten.ipynb
+│   ├── daten/
+│   │   └── README.md
+│   └── uebungen/
+│       ├── 01_uebungen_lineare_regression.ipynb
+│       ├── 02_uebungen_logistische_regression.ipynb
+│       ├── 03_uebungen_breast_cancer_xai.ipynb
+│       ├── 04_fragen_regression_klassifikation.ipynb
+│       └── loesungen/
+└── set6-bias-varianz-und-regularisierung/
+    ├── 01_bias_varianz_polynom_interaktiv.ipynb
+    ├── 02_regularisierung_l1_l2.ipynb
+    ├── 03_hyperparameter_tuning_regression.ipynb
     └── uebungen/
-        ├── 01_uebungen_lineare_regression.ipynb
-        ├── 02_uebungen_logistische_regression.ipynb
-        ├── 03_uebungen_breast_cancer_xai.ipynb
-        ├── 04_fragen_regression_klassifikation.ipynb
+        ├── 01_projekt_optimale_regression.ipynb
+        ├── 02_fragen_bias_varianz_regularisierung.ipynb
         └── loesungen/
 ```
 
