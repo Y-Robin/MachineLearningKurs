@@ -3,7 +3,7 @@
 In diesem Ordner liegt die Datei `SMSSpamCollection` aus dem Datensatz **SMS Spam Collection**.
 
 - Quelle: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/228/sms%2Bspam%2Bcollection)
-- Umfang: 5.574 englischsprachige SMS, jeweils als `ham` oder `spam` markiert
+- Umfang: 5.572 englischsprachige SMS, jeweils als `ham` oder `spam` markiert
 - Urheber: Tiago Almeida und Jose Maria Gomez Hidalgo
 - DOI: [10.24432/C5CC84](https://doi.org/10.24432/C5CC84)
 - Lizenz: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
