@@ -58,13 +58,24 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 │       ├── 03_uebungen_breast_cancer_xai.ipynb
 │       ├── 04_fragen_regression_klassifikation.ipynb
 │       └── loesungen/
-└── set6-bias-varianz-und-regularisierung/
-    ├── 01_bias_varianz_polynom_interaktiv.ipynb
-    ├── 02_regularisierung_l1_l2.ipynb
-    ├── 03_hyperparameter_tuning_regression.ipynb
+├── set6-bias-varianz-und-regularisierung/
+│   ├── 01_bias_varianz_polynom_interaktiv.ipynb
+│   ├── 02_regularisierung_l1_l2.ipynb
+│   ├── 03_hyperparameter_tuning_regression.ipynb
+│   └── uebungen/
+│       ├── 01_projekt_optimale_regression.ipynb
+│       ├── 02_fragen_bias_varianz_regularisierung.ipynb
+│       └── loesungen/
+└── set7-naive-bayes-und-textklassifikation/
+    ├── 01_gaussian_naive_bayes.ipynb
+    ├── 02_naive_bayes_vs_logistische_regression.ipynb
+    ├── 03_textmerkmale_multinomial_naive_bayes.ipynb
+    ├── daten/
+    │   ├── SMSSpamCollection
+    │   └── README.md
     └── uebungen/
-        ├── 01_projekt_optimale_regression.ipynb
-        ├── 02_fragen_bias_varianz_regularisierung.ipynb
+        ├── 01_projekt_sms_spamklassifikation.ipynb
+        ├── 02_fragen_naive_bayes_textklassifikation.ipynb
         └── loesungen/
 ```
 
