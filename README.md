@@ -66,16 +66,30 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 │       ├── 01_projekt_optimale_regression.ipynb
 │       ├── 02_fragen_bias_varianz_regularisierung.ipynb
 │       └── loesungen/
-└── set7-naive-bayes-und-textklassifikation/
-    ├── 01_gaussian_naive_bayes.ipynb
-    ├── 02_naive_bayes_vs_logistische_regression.ipynb
-    ├── 03_textmerkmale_multinomial_naive_bayes.ipynb
+├── set7-naive-bayes-und-textklassifikation/
+│   ├── 01_gaussian_naive_bayes.ipynb
+│   ├── 02_naive_bayes_vs_logistische_regression.ipynb
+│   ├── 03_textmerkmale_multinomial_naive_bayes.ipynb
+│   ├── daten/
+│   │   ├── SMSSpamCollection
+│   │   └── README.md
+│   └── uebungen/
+│       ├── 01_projekt_sms_spamklassifikation.ipynb
+│       ├── 02_fragen_naive_bayes_textklassifikation.ipynb
+│       └── loesungen/
+└── set8-entscheidungsbaeume-und-ensembles/
+    ├── 01_entscheidungsbaum_klassifikation.ipynb
+    ├── 02_entscheidungsbaum_regression.ipynb
+    ├── 03_random_forest.ipynb
+    ├── 04_gradient_boosting_und_modellvergleich.ipynb
     ├── daten/
-    │   ├── SMSSpamCollection
+    │   ├── banknote_authentication.csv
     │   └── README.md
     └── uebungen/
-        ├── 01_projekt_sms_spamklassifikation.ipynb
-        ├── 02_fragen_naive_bayes_textklassifikation.ipynb
+        ├── 01_entscheidungsbaum_banknoten.ipynb
+        ├── 02_random_forest_banknoten.ipynb
+        ├── 03_gradient_boosting_banknoten.ipynb
+        ├── 04_vergleich_und_fragen.ipynb
         └── loesungen/
 ```
 
