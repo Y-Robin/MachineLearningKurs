@@ -77,19 +77,30 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 │       ├── 01_projekt_sms_spamklassifikation.ipynb
 │       ├── 02_fragen_naive_bayes_textklassifikation.ipynb
 │       └── loesungen/
-└── set8-entscheidungsbaeume-und-ensembles/
-    ├── 01_entscheidungsbaum_klassifikation.ipynb
-    ├── 02_entscheidungsbaum_regression.ipynb
-    ├── 03_random_forest.ipynb
-    ├── 04_gradient_boosting_und_modellvergleich.ipynb
+├── set8-entscheidungsbaeume-und-ensembles/
+│   ├── 01_entscheidungsbaum_klassifikation.ipynb
+│   ├── 02_entscheidungsbaum_regression.ipynb
+│   ├── 03_random_forest.ipynb
+│   ├── 04_gradient_boosting_und_modellvergleich.ipynb
+│   ├── daten/
+│   │   ├── banknote_authentication.csv
+│   │   └── README.md
+│   └── uebungen/
+│       ├── 01_entscheidungsbaum_banknoten.ipynb
+│       ├── 02_random_forest_banknoten.ipynb
+│       ├── 03_gradient_boosting_banknoten.ipynb
+│       ├── 04_vergleich_und_fragen.ipynb
+│       └── loesungen/
+└── set9-knn-und-dimensionen/
+    ├── 01_knn_pipeline_klassifikation.ipynb
+    ├── 02_curse_of_dimensionality.ipynb
+    ├── 03_distanzen_gewichtung_und_regression.ipynb
     ├── daten/
-    │   ├── banknote_authentication.csv
+    │   ├── wdbc.csv
     │   └── README.md
     └── uebungen/
-        ├── 01_entscheidungsbaum_banknoten.ipynb
-        ├── 02_random_forest_banknoten.ipynb
-        ├── 03_gradient_boosting_banknoten.ipynb
-        ├── 04_vergleich_und_fragen.ipynb
+        ├── 01_projekt_knn_wdbc.ipynb
+        ├── 02_fragen_knn.ipynb
         └── loesungen/
 ```
 
