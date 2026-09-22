@@ -91,16 +91,21 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 │       ├── 03_gradient_boosting_banknoten.ipynb
 │       ├── 04_vergleich_und_fragen.ipynb
 │       └── loesungen/
-└── set9-knn-und-dimensionen/
-    ├── 01_knn_pipeline_klassifikation.ipynb
-    ├── 02_curse_of_dimensionality.ipynb
-    ├── 03_distanzen_gewichtung_und_regression.ipynb
-    ├── daten/
-    │   ├── wdbc.csv
-    │   └── README.md
+├── set9-knn-und-dimensionen/
+│   ├── 01_knn_pipeline_klassifikation.ipynb
+│   ├── 02_curse_of_dimensionality.ipynb
+│   ├── 03_distanzen_gewichtung_und_regression.ipynb
+│   ├── daten/
+│   │   ├── wdbc.csv
+│   │   └── README.md
+│   └── uebungen/
+│       ├── 01_projekt_knn_wdbc.ipynb
+│       ├── 02_fragen_knn.ipynb
+│       └── loesungen/
+└── set10-conditional-random-fields/
+    ├── 01_crf_score_forward_viterbi.ipynb
     └── uebungen/
-        ├── 01_projekt_knn_wdbc.ipynb
-        ├── 02_fragen_knn.ipynb
+        ├── 01_miniuebung_crf.ipynb
         └── loesungen/
 ```
 
