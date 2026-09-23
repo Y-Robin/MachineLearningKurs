@@ -102,10 +102,18 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 │       ├── 01_projekt_knn_wdbc.ipynb
 │       ├── 02_fragen_knn.ipynb
 │       └── loesungen/
-└── set10-conditional-random-fields/
-    ├── 01_crf_score_forward_viterbi.ipynb
+├── exkurs-conditional-random-fields/
+│   ├── 01_crf_score_forward_viterbi.ipynb
+│   └── uebungen/
+│       ├── 01_miniuebung_crf.ipynb
+│       └── loesungen/
+└── set10-support-vector-machines/
+    ├── 01_svm_klassifikation.ipynb
+    ├── 02_svm_regression.ipynb
     └── uebungen/
-        ├── 01_miniuebung_crf.ipynb
+        ├── 01_uebung_svm_klassifikation.ipynb
+        ├── 02_uebung_svm_regression.ipynb
+        ├── 03_fragen_svm.ipynb
         └── loesungen/
 ```
 
