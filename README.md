@@ -107,13 +107,21 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 │   └── uebungen/
 │       ├── 01_miniuebung_crf.ipynb
 │       └── loesungen/
-└── set10-support-vector-machines/
-    ├── 01_svm_klassifikation.ipynb
-    ├── 02_svm_regression.ipynb
+├── set10-support-vector-machines/
+│   ├── 01_svm_klassifikation.ipynb
+│   ├── 02_svm_regression.ipynb
+│   └── uebungen/
+│       ├── 01_uebung_svm_klassifikation.ipynb
+│       ├── 02_uebung_svm_regression.ipynb
+│       ├── 03_fragen_svm.ipynb
+│       └── loesungen/
+└── set11-neuronale-netze/
+    ├── 01_mlp_regression.ipynb
+    ├── 02_mlp_klassifikation.ipynb
     └── uebungen/
-        ├── 01_uebung_svm_klassifikation.ipynb
-        ├── 02_uebung_svm_regression.ipynb
-        ├── 03_fragen_svm.ipynb
+        ├── 01_uebung_mlp_regression.ipynb
+        ├── 02_uebung_mlp_klassifikation.ipynb
+        ├── 03_fragen_neuronale_netze.ipynb
         └── loesungen/
 ```
 
