@@ -7,6 +7,10 @@ ipywidgets>=8.1,<9
 numpy>=2.0,<3
 pandas>=2.2,<4
 matplotlib>=3.9,<4
+scipy>=1.13,<2
 
 # Machine Learning
 scikit-learn>=1.5,<2
+
+# Zeitreihenanalyse (Set 12)
+statsmodels>=0.14,<0.16

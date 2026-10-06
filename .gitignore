@@ -16,3 +16,13 @@ __pycache__/
 .DS_Store
 Thumbs.db
 .vscode/
+
+# CWRU-Rohaufnahmen: lokaler Download-Cache
+set3-datenanalyse-und-visualisierung/daten/cwru/
+
+# NN2: heruntergeladene Gewichte und abgeleitete Features bleiben lokal
+set14-neuronale-netze-nn2/daten/torch_cache/
+set14-neuronale-netze-nn2/daten/feature_cache/
+
+# Set 15: reproduzierbare lokale Modellartefakte
+set15-modelle-speichern-und-laden/artefakte/

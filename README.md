@@ -8,6 +8,7 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 .
 ├── README.md
 ├── requirements.txt
+├── requirements-cpu.txt
 ├── set1-python-grundlagen/
 │   ├── 01_python_setup_und_bibliotheken.ipynb
 │   ├── 02_python_und_numpy_basics.ipynb
@@ -25,6 +26,9 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 │   ├── 02_eda_palmer_penguins.ipynb
 │   ├── 03_eda_wine_quality.ipynb
 │   ├── 04_eda_predictive_maintenance.ipynb
+│   ├── 05_sensor_signale_fft_features.ipynb
+│   ├── 06_pca_sensor_features.ipynb
+│   ├── sensor_features.py
 │   ├── daten/
 │   │   ├── palmer_penguins.csv
 │   │   ├── wine_quality_red.csv
@@ -115,15 +119,103 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 │       ├── 02_uebung_svm_regression.ipynb
 │       ├── 03_fragen_svm.ipynb
 │       └── loesungen/
-└── set11-neuronale-netze/
-    ├── 01_mlp_regression.ipynb
-    ├── 02_mlp_klassifikation.ipynb
+├── set11-unueberwachtes-lernen/
+│   ├── 01_pca_und_merkmalsreduktion.ipynb
+│   ├── 02_nmf_und_tsne.ipynb
+│   ├── 03_kmeans_und_clusterbewertung.ipynb
+│   ├── 04_hierarchisch_dbscan_und_gmm.ipynb
+│   ├── 05_anomalieerkennung_und_thresholds.ipynb
+│   └── uebungen/
+│       ├── 01_uebung_pca_und_feature_reduction.ipynb
+│       ├── 02_uebung_clustering.ipynb
+│       ├── 03_uebung_anomalie_threshold.ipynb
+│       ├── 04_fragen_unueberwachtes_lernen.ipynb
+│       └── loesungen/
+├── set12-zeitreihenanalyse/
+│   ├── 01_zeitreihen_darstellen_und_fenster_interaktiv.ipynb
+│   ├── 02_trend_saisonalitaet_und_autokorrelation.ipynb
+│   ├── 03_zeitlicher_split_lags_und_backtesting.ipynb
+│   ├── 04_arima_prognosehorizont_und_unsicherheit.ipynb
+│   ├── 05_echte_daten_bike_sharing_prognose.ipynb
+│   ├── zeitreihen_tools.py
+│   ├── README.md
+│   ├── daten/
+│   │   ├── bike_day.csv
+│   │   ├── energie_sensoren.csv
+│   │   ├── download_daten.py
+│   │   ├── quellen_manifest.json
+│   │   └── README.md
+│   └── uebungen/
+│       ├── 01_uebung_fenster_und_backtesting.ipynb
+│       ├── 02_uebung_echte_energie_sensoren.ipynb
+│       ├── 03_fragen_zeitreihen.ipynb
+│       └── loesungen/
+├── set13-neuronale-netze-nn1/
+│   ├── 01_mlp_regression.ipynb
+│   ├── 02_mlp_klassifikation.ipynb
+│   ├── README.md
+│   └── uebungen/
+│       ├── 01_uebung_mlp_regression.ipynb
+│       ├── 02_uebung_mlp_klassifikation.ipynb
+│       ├── 03_fragen_neuronale_netze.ipynb
+│       └── loesungen/
+├── set14-neuronale-netze-nn2/
+│   ├── 01_pytorch_ziffern_und_pixel.ipynb
+│   ├── 02_cnn_filter_pooling_und_feature_maps.ipynb
+│   ├── 03_transfer_learning_nur_der_kopf.ipynb
+│   ├── cv_tools.py
+│   ├── README.md
+│   ├── daten/
+│   │   └── README.md
+│   └── uebungen/
+│       ├── 01_uebung_kleines_cnn.ipynb
+│       ├── 02_uebung_transfer_zwei_ziffern.ipynb
+│       ├── 03_fragen_computer_vision.ipynb
+│       └── loesungen/
+└── set15-modelle-speichern-und-laden/
+    ├── 01_sklearn_pipeline_speichern_und_laden.ipynb
+    ├── 02_sklearn_eigener_transformer_und_modellpaket.ipynb
+    ├── 03_pytorch_gewichte_speichern_und_laden_cpu.ipynb
+    ├── deployment_tools.py
+    ├── custom_transformer.py
+    ├── model_code.py
+    ├── predict.py
+    ├── README.md
     └── uebungen/
-        ├── 01_uebung_mlp_regression.ipynb
-        ├── 02_uebung_mlp_klassifikation.ipynb
-        ├── 03_fragen_neuronale_netze.ipynb
+        ├── 01_fragen_modelle_speichern_und_laden.ipynb
         └── loesungen/
 ```
+
+## Set 3: echte Sensorsignale und Feature Engineering
+
+Nach der tabellarischen EDA folgen zwei zusammenhängende Beispiele:
+
+- `05_sensor_signale_fft_features.ipynb`: echte Kugellager-Beschleunigungssignale, geschätzte Umdrehungsfenster, FFT und Zeit-/Frequenzmerkmale pro Messfenster.
+- `06_pca_sensor_features.ipynb`: Korrelationen, Standardisierung, anschauliche PCA-Achsen, Komponentengewichte und die Berechnung neuer Merkmale.
+
+Beide Notebooks laden beim ersten Start nur vier kleine MATLAB-Aufnahmen direkt vom CWRU Bearing Data Center in `set3-datenanalyse-und-visualisierung/daten/cwru`. Danach nutzen sie den lokalen Cache offline. Internet ist nur beim ersten Download nötig. Die neuen Notebooks enthalten kleine Aufgaben; die Hilfsdatei `sensor_features.py` bündelt Laden und Feature-Berechnung. Quellen und Datenauswahl stehen in `set3-datenanalyse-und-visualisierung/daten/README.md`.
+
+## Set 12: Zeitreihenanalyse
+
+Fünf Beispiele behandeln interaktive Bereichs-/Fensterwahl, Trend/Saisonalität/Autokorrelation, zeitliches Backtesting, ARIMA und einen Test auf echten Fahrrad-Ausleihdaten. Zwei Übungen und ein Fragenkatalog mit 25 Fragen ergänzen das Set. Eine Übung verwendet echte Energie-Sensordaten. Beide Datenauswahlen liegen offline vor und sind unter CC BY 4.0 kommerziell nutzbar mit Quellenangabe.
+
+Die Notebooks enthalten gespeicherte Outputs. Für Änderungen der Slider müssen die Zellen mit laufendem Kernel ausgeführt werden. Überblick und Quellen: `set12-zeitreihenanalyse/README.md`.
+
+## NN1 und NN2: Sets 13 und 14
+
+Die bisherigen neuronalen Netze liegen als NN1 auf Platz 13. Unüberwachtes Lernen und Zeitreihen sind dafür auf Plätze 11 und 12 gerückt. NN2 / Set 14 ergänzt drei CPU-PyTorch-Beispiele: Ziffernerkennung, ein kleines CNN mit sichtbaren Filtern/Feature Maps und Transfer Learning mit vortrainiertem MobileNet-Backbone und ausschließlich neu trainiertem Kopf. Dazu kommen zwei einfache Übungen und 20 Fragen.
+
+PyTorch für NN2 separat als CPU-Build installieren:
+
+```powershell
+.venv\Scripts\python.exe -m pip install -r requirements-cpu.txt
+```
+
+Vorher die normalen Kursabhängigkeiten aus `requirements.txt` installieren. Die CPU-Datei verwendet den offiziellen CPU-Wheel-Index und fixiert zusammenpassende getestete Versionen. Überblick: `set14-neuronale-netze-nn2/README.md`.
+
+## Set 15: Modelle speichern und laden
+
+Drei kurze Beispiele mit scikit-learn und CPU-PyTorch zeigen gespeicherte Pipelines, eigene Transformer und getrennte Architektur/Gewichte. Alle Modelle werden in einem neuen Python-Prozess geladen und ihre Vorhersagen verglichen. Dazu kommen 18 Übungsfragen und lokale Musterantworten. Einstieg: `set15-modelle-speichern-und-laden/README.md`. PyTorch verwendet dieselbe `requirements-cpu.txt` wie NN2.
 
 ## Voraussetzungen
 

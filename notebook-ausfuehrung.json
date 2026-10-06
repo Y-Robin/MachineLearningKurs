@@ -1,0 +1,1128 @@
+{
+  "gesamt": 134,
+  "abgeschlossen": 134,
+  "ergebnisse": [
+    {
+      "notebook": "exkurs-conditional-random-fields\\01_crf_score_forward_viterbi.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 24.48,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 10
+    },
+    {
+      "notebook": "exkurs-conditional-random-fields\\uebungen\\01_miniuebung_crf.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 23.96,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 0
+    },
+    {
+      "notebook": "exkurs-conditional-random-fields\\uebungen\\loesungen\\01_loesung_miniuebung_crf.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 24.35,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 7
+    },
+    {
+      "notebook": "set1-python-grundlagen\\01_python_setup_und_bibliotheken.ipynb",
+      "codezellen": 4,
+      "status": "ok",
+      "dauer_s": 7.79,
+      "ausgefuehrte_codezellen": 4,
+      "outputs": 3
+    },
+    {
+      "notebook": "set1-python-grundlagen\\02_python_und_numpy_basics.ipynb",
+      "codezellen": 10,
+      "status": "ok",
+      "dauer_s": 7.68,
+      "ausgefuehrte_codezellen": 10,
+      "outputs": 10
+    },
+    {
+      "notebook": "set1-python-grundlagen\\uebungen\\01_uebungen_python_setup.ipynb",
+      "codezellen": 2,
+      "status": "ok",
+      "dauer_s": 5.91,
+      "ausgefuehrte_codezellen": 2,
+      "outputs": 0
+    },
+    {
+      "notebook": "set1-python-grundlagen\\uebungen\\02_uebungen_python_numpy.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 5.52,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 0
+    },
+    {
+      "notebook": "set1-python-grundlagen\\uebungen\\loesungen\\01_loesungen_python_setup.ipynb",
+      "codezellen": 2,
+      "status": "ok",
+      "dauer_s": 5.06,
+      "ausgefuehrte_codezellen": 2,
+      "outputs": 2
+    },
+    {
+      "notebook": "set1-python-grundlagen\\uebungen\\loesungen\\02_loesungen_python_numpy.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 5.05,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 9
+    },
+    {
+      "notebook": "set10-support-vector-machines\\01_svm_klassifikation.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 108.68,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 13
+    },
+    {
+      "notebook": "set10-support-vector-machines\\02_svm_regression.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 108.38,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 12
+    },
+    {
+      "notebook": "set10-support-vector-machines\\uebungen\\01_uebung_svm_klassifikation.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 56.36,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 0
+    },
+    {
+      "notebook": "set10-support-vector-machines\\uebungen\\02_uebung_svm_regression.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 54.74,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 0
+    },
+    {
+      "notebook": "set10-support-vector-machines\\uebungen\\03_fragen_svm.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.04,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set10-support-vector-machines\\uebungen\\loesungen\\01_loesung_svm_klassifikation.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 12.65,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 11
+    },
+    {
+      "notebook": "set10-support-vector-machines\\uebungen\\loesungen\\02_loesung_svm_regression.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 12.38,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 12
+    },
+    {
+      "notebook": "set10-support-vector-machines\\uebungen\\loesungen\\03_loesungen_fragen_svm.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.08,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set11-unueberwachtes-lernen\\01_pca_und_merkmalsreduktion.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 3.63,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 13
+    },
+    {
+      "notebook": "set11-unueberwachtes-lernen\\02_nmf_und_tsne.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 6.6,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 8
+    },
+    {
+      "notebook": "set11-unueberwachtes-lernen\\03_kmeans_und_clusterbewertung.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 3.84,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 8
+    },
+    {
+      "notebook": "set11-unueberwachtes-lernen\\04_hierarchisch_dbscan_und_gmm.ipynb",
+      "codezellen": 6,
+      "status": "ok",
+      "dauer_s": 3.9,
+      "ausgefuehrte_codezellen": 6,
+      "outputs": 9
+    },
+    {
+      "notebook": "set11-unueberwachtes-lernen\\05_anomalieerkennung_und_thresholds.ipynb",
+      "codezellen": 9,
+      "status": "ok",
+      "dauer_s": 4.84,
+      "ausgefuehrte_codezellen": 9,
+      "outputs": 10
+    },
+    {
+      "notebook": "set11-unueberwachtes-lernen\\uebungen\\01_uebung_pca_und_feature_reduction.ipynb",
+      "codezellen": 6,
+      "status": "ok",
+      "dauer_s": 2.67,
+      "ausgefuehrte_codezellen": 6,
+      "outputs": 1
+    },
+    {
+      "notebook": "set11-unueberwachtes-lernen\\uebungen\\02_uebung_clustering.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 2.77,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 1
+    },
+    {
+      "notebook": "set11-unueberwachtes-lernen\\uebungen\\03_uebung_anomalie_threshold.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 2.8,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 1
+    },
+    {
+      "notebook": "set11-unueberwachtes-lernen\\uebungen\\04_fragen_unueberwachtes_lernen.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 4.11,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set11-unueberwachtes-lernen\\uebungen\\loesungen\\01_loesung_pca_und_feature_reduction.ipynb",
+      "codezellen": 6,
+      "status": "ok",
+      "dauer_s": 3.21,
+      "ausgefuehrte_codezellen": 6,
+      "outputs": 13
+    },
+    {
+      "notebook": "set11-unueberwachtes-lernen\\uebungen\\loesungen\\02_loesung_clustering.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 3.54,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 13
+    },
+    {
+      "notebook": "set11-unueberwachtes-lernen\\uebungen\\loesungen\\03_loesung_anomalie_threshold.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 3.72,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 7
+    },
+    {
+      "notebook": "set11-unueberwachtes-lernen\\uebungen\\loesungen\\04_loesungen_fragen_unueberwachtes_lernen.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 4.1,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set12-zeitreihenanalyse\\01_zeitreihen_darstellen_und_fenster_interaktiv.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 3.55,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 11
+    },
+    {
+      "notebook": "set12-zeitreihenanalyse\\02_trend_saisonalitaet_und_autokorrelation.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 4.44,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 12
+    },
+    {
+      "notebook": "set12-zeitreihenanalyse\\03_zeitlicher_split_lags_und_backtesting.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 3.47,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 9
+    },
+    {
+      "notebook": "set12-zeitreihenanalyse\\04_arima_prognosehorizont_und_unsicherheit.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 4.46,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 12
+    },
+    {
+      "notebook": "set12-zeitreihenanalyse\\05_echte_daten_bike_sharing_prognose.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 3.51,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 12
+    },
+    {
+      "notebook": "set12-zeitreihenanalyse\\uebungen\\01_uebung_fenster_und_backtesting.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 2.69,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 1
+    },
+    {
+      "notebook": "set12-zeitreihenanalyse\\uebungen\\02_uebung_echte_energie_sensoren.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 3.0,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 2
+    },
+    {
+      "notebook": "set12-zeitreihenanalyse\\uebungen\\03_fragen_zeitreihen.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 1.02,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set12-zeitreihenanalyse\\uebungen\\loesungen\\01_loesung_fenster_und_backtesting.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 3.47,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 11
+    },
+    {
+      "notebook": "set12-zeitreihenanalyse\\uebungen\\loesungen\\02_loesung_echte_energie_sensoren.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 3.53,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 13
+    },
+    {
+      "notebook": "set12-zeitreihenanalyse\\uebungen\\loesungen\\03_loesungen_fragen_zeitreihen.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 4.11,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set13-neuronale-netze-nn1\\01_mlp_regression.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 11.06,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 8
+    },
+    {
+      "notebook": "set13-neuronale-netze-nn1\\02_mlp_klassifikation.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 11.42,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 11
+    },
+    {
+      "notebook": "set13-neuronale-netze-nn1\\uebungen\\01_uebung_mlp_regression.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 4.59,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 1
+    },
+    {
+      "notebook": "set13-neuronale-netze-nn1\\uebungen\\02_uebung_mlp_klassifikation.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 2.73,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 1
+    },
+    {
+      "notebook": "set13-neuronale-netze-nn1\\uebungen\\03_fragen_neuronale_netze.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.89,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set13-neuronale-netze-nn1\\uebungen\\loesungen\\01_loesung_mlp_regression.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 14.97,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 11
+    },
+    {
+      "notebook": "set13-neuronale-netze-nn1\\uebungen\\loesungen\\02_loesung_mlp_klassifikation.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 14.89,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 7
+    },
+    {
+      "notebook": "set13-neuronale-netze-nn1\\uebungen\\loesungen\\03_loesungen_fragen_neuronale_netze.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 4.13,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set14-neuronale-netze-nn2\\01_pytorch_ziffern_und_pixel.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 7.65,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 15
+    },
+    {
+      "notebook": "set14-neuronale-netze-nn2\\02_cnn_filter_pooling_und_feature_maps.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 7.7,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 13
+    },
+    {
+      "notebook": "set14-neuronale-netze-nn2\\03_transfer_learning_nur_der_kopf.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 20.92,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 13
+    },
+    {
+      "notebook": "set14-neuronale-netze-nn2\\uebungen\\01_uebung_kleines_cnn.ipynb",
+      "codezellen": 6,
+      "status": "ok",
+      "dauer_s": 4.25,
+      "ausgefuehrte_codezellen": 6,
+      "outputs": 2
+    },
+    {
+      "notebook": "set14-neuronale-netze-nn2\\uebungen\\02_uebung_transfer_zwei_ziffern.ipynb",
+      "codezellen": 6,
+      "status": "ok",
+      "dauer_s": 7.36,
+      "ausgefuehrte_codezellen": 6,
+      "outputs": 2
+    },
+    {
+      "notebook": "set14-neuronale-netze-nn2\\uebungen\\03_fragen_computer_vision.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.98,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set14-neuronale-netze-nn2\\uebungen\\loesungen\\01_loesung_kleines_cnn.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 9.12,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 12
+    },
+    {
+      "notebook": "set14-neuronale-netze-nn2\\uebungen\\loesungen\\02_loesung_transfer_zwei_ziffern.ipynb",
+      "codezellen": 4,
+      "status": "ok",
+      "dauer_s": 6.29,
+      "ausgefuehrte_codezellen": 4,
+      "outputs": 7
+    },
+    {
+      "notebook": "set14-neuronale-netze-nn2\\uebungen\\loesungen\\03_loesungen_fragen_computer_vision.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.99,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set15-modelle-speichern-und-laden\\01_sklearn_pipeline_speichern_und_laden.ipynb",
+      "codezellen": 6,
+      "status": "ok",
+      "dauer_s": 9.54,
+      "ausgefuehrte_codezellen": 6,
+      "outputs": 6
+    },
+    {
+      "notebook": "set15-modelle-speichern-und-laden\\02_sklearn_eigener_transformer_und_modellpaket.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 4.66,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 5
+    },
+    {
+      "notebook": "set15-modelle-speichern-und-laden\\03_pytorch_gewichte_speichern_und_laden_cpu.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 9.66,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 9
+    },
+    {
+      "notebook": "set15-modelle-speichern-und-laden\\uebungen\\01_fragen_modelle_speichern_und_laden.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.01,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set15-modelle-speichern-und-laden\\uebungen\\loesungen\\01_loesungen_fragen_modelle_speichern_und_laden.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.01,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set2-ml-grundlagen\\uebungen\\01_fragenkatalog_ml_grundlagen.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.02,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set2-ml-grundlagen\\uebungen\\02_fallstudien_methodenwahl.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.02,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set2-ml-grundlagen\\uebungen\\loesungen\\01_loesungen_fragenkatalog.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.03,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set2-ml-grundlagen\\uebungen\\loesungen\\02_loesungen_fallstudien.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.02,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set3-datenanalyse-und-visualisierung\\01_pandas_basics.ipynb",
+      "codezellen": 9,
+      "status": "ok",
+      "dauer_s": 1.81,
+      "ausgefuehrte_codezellen": 9,
+      "outputs": 19
+    },
+    {
+      "notebook": "set3-datenanalyse-und-visualisierung\\02_eda_palmer_penguins.ipynb",
+      "codezellen": 6,
+      "status": "ok",
+      "dauer_s": 2.41,
+      "ausgefuehrte_codezellen": 6,
+      "outputs": 9
+    },
+    {
+      "notebook": "set3-datenanalyse-und-visualisierung\\03_eda_wine_quality.ipynb",
+      "codezellen": 6,
+      "status": "ok",
+      "dauer_s": 2.47,
+      "ausgefuehrte_codezellen": 6,
+      "outputs": 10
+    },
+    {
+      "notebook": "set3-datenanalyse-und-visualisierung\\04_eda_predictive_maintenance.ipynb",
+      "codezellen": 6,
+      "status": "ok",
+      "dauer_s": 2.61,
+      "ausgefuehrte_codezellen": 6,
+      "outputs": 11
+    },
+    {
+      "notebook": "set3-datenanalyse-und-visualisierung\\05_sensor_signale_fft_features.ipynb",
+      "codezellen": 10,
+      "status": "ok",
+      "dauer_s": 6.0,
+      "ausgefuehrte_codezellen": 10,
+      "outputs": 17
+    },
+    {
+      "notebook": "set3-datenanalyse-und-visualisierung\\06_pca_sensor_features.ipynb",
+      "codezellen": 11,
+      "status": "ok",
+      "dauer_s": 6.43,
+      "ausgefuehrte_codezellen": 11,
+      "outputs": 15
+    },
+    {
+      "notebook": "set3-datenanalyse-und-visualisierung\\uebungen\\01_uebungen_pandas.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 2.84,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 1
+    },
+    {
+      "notebook": "set3-datenanalyse-und-visualisierung\\uebungen\\02_fragen_datenanalyse_visualisierung.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.02,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set3-datenanalyse-und-visualisierung\\uebungen\\03_programmieruebungen_eda.ipynb",
+      "codezellen": 10,
+      "status": "ok",
+      "dauer_s": 1.83,
+      "ausgefuehrte_codezellen": 10,
+      "outputs": 0
+    },
+    {
+      "notebook": "set3-datenanalyse-und-visualisierung\\uebungen\\loesungen\\01_loesungen_pandas.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 1.89,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 13
+    },
+    {
+      "notebook": "set3-datenanalyse-und-visualisierung\\uebungen\\loesungen\\02_loesungen_fragen_datenanalyse.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.01,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set3-datenanalyse-und-visualisierung\\uebungen\\loesungen\\03_loesungen_programmieruebungen_eda.ipynb",
+      "codezellen": 6,
+      "status": "ok",
+      "dauer_s": 2.39,
+      "ausgefuehrte_codezellen": 6,
+      "outputs": 19
+    },
+    {
+      "notebook": "set4-machine-learning-mit-scikit-learn\\01_daten_verstehen_und_visualisieren.ipynb",
+      "codezellen": 10,
+      "status": "ok",
+      "dauer_s": 2.45,
+      "ausgefuehrte_codezellen": 10,
+      "outputs": 14
+    },
+    {
+      "notebook": "set4-machine-learning-mit-scikit-learn\\02_sklearn_transformer_basics.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 2.45,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 12
+    },
+    {
+      "notebook": "set4-machine-learning-mit-scikit-learn\\03_preprocessing_mit_pipeline.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 2.55,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 6
+    },
+    {
+      "notebook": "set4-machine-learning-mit-scikit-learn\\uebungen\\01_uebungen_datenanalyse.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 1.65,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 0
+    },
+    {
+      "notebook": "set4-machine-learning-mit-scikit-learn\\uebungen\\02_fragen_preprocessing_pipeline.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.01,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set4-machine-learning-mit-scikit-learn\\uebungen\\03_programmieruebungen_preprocessing.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 1.43,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 1
+    },
+    {
+      "notebook": "set4-machine-learning-mit-scikit-learn\\uebungen\\loesungen\\01_loesungen_datenanalyse.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 2.06,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 12
+    },
+    {
+      "notebook": "set4-machine-learning-mit-scikit-learn\\uebungen\\loesungen\\02_loesungen_fragen_preprocessing.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.01,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set4-machine-learning-mit-scikit-learn\\uebungen\\loesungen\\03_loesungen_programmieruebungen_preprocessing.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 2.45,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 10
+    },
+    {
+      "notebook": "set5-lineare-und-logistische-regression\\01_lineare_regression.ipynb",
+      "codezellen": 10,
+      "status": "ok",
+      "dauer_s": 3.05,
+      "ausgefuehrte_codezellen": 10,
+      "outputs": 11
+    },
+    {
+      "notebook": "set5-lineare-und-logistische-regression\\02_m_und_b_interaktiv.ipynb",
+      "codezellen": 6,
+      "status": "ok",
+      "dauer_s": 3.17,
+      "ausgefuehrte_codezellen": 6,
+      "outputs": 5
+    },
+    {
+      "notebook": "set5-lineare-und-logistische-regression\\03_logistische_regression.ipynb",
+      "codezellen": 12,
+      "status": "ok",
+      "dauer_s": 3.5,
+      "ausgefuehrte_codezellen": 12,
+      "outputs": 11
+    },
+    {
+      "notebook": "set5-lineare-und-logistische-regression\\04_pipeline_palmer_penguins.ipynb",
+      "codezellen": 11,
+      "status": "ok",
+      "dauer_s": 3.93,
+      "ausgefuehrte_codezellen": 11,
+      "outputs": 11
+    },
+    {
+      "notebook": "set5-lineare-und-logistische-regression\\05_xai_koeffizienten.ipynb",
+      "codezellen": 10,
+      "status": "ok",
+      "dauer_s": 3.22,
+      "ausgefuehrte_codezellen": 10,
+      "outputs": 12
+    },
+    {
+      "notebook": "set5-lineare-und-logistische-regression\\uebungen\\01_uebungen_lineare_regression.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 1.77,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 0
+    },
+    {
+      "notebook": "set5-lineare-und-logistische-regression\\uebungen\\02_uebungen_logistische_regression.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 2.61,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 0
+    },
+    {
+      "notebook": "set5-lineare-und-logistische-regression\\uebungen\\03_uebungen_breast_cancer_xai.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 2.77,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 0
+    },
+    {
+      "notebook": "set5-lineare-und-logistische-regression\\uebungen\\04_fragen_regression_klassifikation.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.01,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set5-lineare-und-logistische-regression\\uebungen\\loesungen\\01_loesungen_lineare_regression.ipynb",
+      "codezellen": 6,
+      "status": "ok",
+      "dauer_s": 3.03,
+      "ausgefuehrte_codezellen": 6,
+      "outputs": 5
+    },
+    {
+      "notebook": "set5-lineare-und-logistische-regression\\uebungen\\loesungen\\02_loesungen_logistische_regression.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 3.11,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 9
+    },
+    {
+      "notebook": "set5-lineare-und-logistische-regression\\uebungen\\loesungen\\03_loesungen_breast_cancer_xai.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 3.17,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 15
+    },
+    {
+      "notebook": "set5-lineare-und-logistische-regression\\uebungen\\loesungen\\04_loesungen_fragen_regression_klassifikation.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.01,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set6-bias-varianz-und-regularisierung\\01_bias_varianz_polynom_interaktiv.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 3.26,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 5
+    },
+    {
+      "notebook": "set6-bias-varianz-und-regularisierung\\02_regularisierung_l1_l2.ipynb",
+      "codezellen": 9,
+      "status": "ok",
+      "dauer_s": 5.37,
+      "ausgefuehrte_codezellen": 9,
+      "outputs": 7
+    },
+    {
+      "notebook": "set6-bias-varianz-und-regularisierung\\03_hyperparameter_tuning_regression.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 7.06,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 6
+    },
+    {
+      "notebook": "set6-bias-varianz-und-regularisierung\\uebungen\\01_projekt_optimale_regression.ipynb",
+      "codezellen": 11,
+      "status": "ok",
+      "dauer_s": 2.75,
+      "ausgefuehrte_codezellen": 11,
+      "outputs": 0
+    },
+    {
+      "notebook": "set6-bias-varianz-und-regularisierung\\uebungen\\02_fragen_bias_varianz_regularisierung.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.04,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set6-bias-varianz-und-regularisierung\\uebungen\\loesungen\\01_loesung_optimale_regression.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 5.65,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 9
+    },
+    {
+      "notebook": "set6-bias-varianz-und-regularisierung\\uebungen\\loesungen\\02_loesungen_fragen_bias_varianz_regularisierung.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.02,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set7-naive-bayes-und-textklassifikation\\01_gaussian_naive_bayes.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 3.5,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 11
+    },
+    {
+      "notebook": "set7-naive-bayes-und-textklassifikation\\02_naive_bayes_vs_logistische_regression.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 3.24,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 4
+    },
+    {
+      "notebook": "set7-naive-bayes-und-textklassifikation\\03_textmerkmale_multinomial_naive_bayes.ipynb",
+      "codezellen": 9,
+      "status": "ok",
+      "dauer_s": 3.03,
+      "ausgefuehrte_codezellen": 9,
+      "outputs": 12
+    },
+    {
+      "notebook": "set7-naive-bayes-und-textklassifikation\\uebungen\\01_projekt_sms_spamklassifikation.ipynb",
+      "codezellen": 11,
+      "status": "ok",
+      "dauer_s": 1.78,
+      "ausgefuehrte_codezellen": 11,
+      "outputs": 1
+    },
+    {
+      "notebook": "set7-naive-bayes-und-textklassifikation\\uebungen\\02_fragen_naive_bayes_textklassifikation.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.04,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set7-naive-bayes-und-textklassifikation\\uebungen\\loesungen\\01_loesung_sms_spamklassifikation.ipynb",
+      "codezellen": 12,
+      "status": "ok",
+      "dauer_s": 33.43,
+      "ausgefuehrte_codezellen": 12,
+      "outputs": 27
+    },
+    {
+      "notebook": "set7-naive-bayes-und-textklassifikation\\uebungen\\loesungen\\02_loesungen_fragen_naive_bayes_textklassifikation.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.01,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set8-entscheidungsbaeume-und-ensembles\\01_entscheidungsbaum_klassifikation.ipynb",
+      "codezellen": 4,
+      "status": "ok",
+      "dauer_s": 7.23,
+      "ausgefuehrte_codezellen": 4,
+      "outputs": 8
+    },
+    {
+      "notebook": "set8-entscheidungsbaeume-und-ensembles\\02_entscheidungsbaum_regression.ipynb",
+      "codezellen": 3,
+      "status": "ok",
+      "dauer_s": 7.04,
+      "ausgefuehrte_codezellen": 3,
+      "outputs": 8
+    },
+    {
+      "notebook": "set8-entscheidungsbaeume-und-ensembles\\03_random_forest.ipynb",
+      "codezellen": 3,
+      "status": "ok",
+      "dauer_s": 40.42,
+      "ausgefuehrte_codezellen": 3,
+      "outputs": 8
+    },
+    {
+      "notebook": "set8-entscheidungsbaeume-und-ensembles\\04_gradient_boosting_und_modellvergleich.ipynb",
+      "codezellen": 4,
+      "status": "ok",
+      "dauer_s": 37.75,
+      "ausgefuehrte_codezellen": 4,
+      "outputs": 4
+    },
+    {
+      "notebook": "set8-entscheidungsbaeume-und-ensembles\\uebungen\\01_entscheidungsbaum_banknoten.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 2.86,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 0
+    },
+    {
+      "notebook": "set8-entscheidungsbaeume-und-ensembles\\uebungen\\02_random_forest_banknoten.ipynb",
+      "codezellen": 4,
+      "status": "ok",
+      "dauer_s": 2.77,
+      "ausgefuehrte_codezellen": 4,
+      "outputs": 0
+    },
+    {
+      "notebook": "set8-entscheidungsbaeume-und-ensembles\\uebungen\\03_gradient_boosting_banknoten.ipynb",
+      "codezellen": 4,
+      "status": "ok",
+      "dauer_s": 2.86,
+      "ausgefuehrte_codezellen": 4,
+      "outputs": 0
+    },
+    {
+      "notebook": "set8-entscheidungsbaeume-und-ensembles\\uebungen\\04_vergleich_und_fragen.ipynb",
+      "codezellen": 1,
+      "status": "ok",
+      "dauer_s": 1.29,
+      "ausgefuehrte_codezellen": 1,
+      "outputs": 1
+    },
+    {
+      "notebook": "set8-entscheidungsbaeume-und-ensembles\\uebungen\\loesungen\\01_loesung_entscheidungsbaum_banknoten.ipynb",
+      "codezellen": 3,
+      "status": "ok",
+      "dauer_s": 5.76,
+      "ausgefuehrte_codezellen": 3,
+      "outputs": 9
+    },
+    {
+      "notebook": "set8-entscheidungsbaeume-und-ensembles\\uebungen\\loesungen\\02_loesung_random_forest_banknoten.ipynb",
+      "codezellen": 3,
+      "status": "ok",
+      "dauer_s": 13.28,
+      "ausgefuehrte_codezellen": 3,
+      "outputs": 8
+    },
+    {
+      "notebook": "set8-entscheidungsbaeume-und-ensembles\\uebungen\\loesungen\\03_loesung_gradient_boosting_banknoten.ipynb",
+      "codezellen": 3,
+      "status": "ok",
+      "dauer_s": 18.43,
+      "ausgefuehrte_codezellen": 3,
+      "outputs": 8
+    },
+    {
+      "notebook": "set8-entscheidungsbaeume-und-ensembles\\uebungen\\loesungen\\04_loesung_vergleich_und_fragen.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.01,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set9-knn-und-dimensionen\\01_knn_pipeline_klassifikation.ipynb",
+      "codezellen": 4,
+      "status": "ok",
+      "dauer_s": 6.02,
+      "ausgefuehrte_codezellen": 4,
+      "outputs": 8
+    },
+    {
+      "notebook": "set9-knn-und-dimensionen\\02_curse_of_dimensionality.ipynb",
+      "codezellen": 2,
+      "status": "ok",
+      "dauer_s": 6.36,
+      "ausgefuehrte_codezellen": 2,
+      "outputs": 4
+    },
+    {
+      "notebook": "set9-knn-und-dimensionen\\03_distanzen_gewichtung_und_regression.ipynb",
+      "codezellen": 3,
+      "status": "ok",
+      "dauer_s": 5.41,
+      "ausgefuehrte_codezellen": 3,
+      "outputs": 4
+    },
+    {
+      "notebook": "set9-knn-und-dimensionen\\uebungen\\01_projekt_knn_wdbc.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 2.9,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 1
+    },
+    {
+      "notebook": "set9-knn-und-dimensionen\\uebungen\\02_fragen_knn.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.02,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set9-knn-und-dimensionen\\uebungen\\loesungen\\01_loesung_projekt_knn_wdbc.ipynb",
+      "codezellen": 6,
+      "status": "ok",
+      "dauer_s": 8.19,
+      "ausgefuehrte_codezellen": 6,
+      "outputs": 11
+    },
+    {
+      "notebook": "set9-knn-und-dimensionen\\uebungen\\loesungen\\02_loesungen_fragen_knn.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.03,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    }
+  ],
+  "pruefung_vor_set13": {
+    "notebooks": 109,
+    "nur_markdown": 23,
+    "codezellen": 560,
+    "nicht_ausgefuehrte_nichtleere_codezellen": 0,
+    "fehleroutputs": 0,
+    "output_typen": {
+      "display_data": 384,
+      "text/html": 223,
+      "text/plain": 403,
+      "stream": 222,
+      "image/png": 168,
+      "application/vnd.jupyter.widget-view+json": 4,
+      "execute_result": 19
+    },
+    "notebooks_mit_widget_zustand": 3
+  },
+  "set12_pruefung": {
+    "notebooks": 11,
+    "codezellen": 66,
+    "diagramme": 28,
+    "widget_notebooks": 4,
+    "nur_markdown": 2,
+    "fehleroutputs": 0,
+    "nicht_ausgefuehrte_codezellen": 0,
+    "widget_fehler": 0,
+    "kausale_feature_pruefung": "ok",
+    "daten_hashes": "ok",
+    "slider_randwerte": "ok"
+  },
+  "nn2_pruefung": {
+    "notebooks": 9,
+    "cpu_build": "torch 2.14.1+cpu / torchvision 0.29.1+cpu",
+    "cuda_build": null,
+    "fehler_outputs": 0,
+    "nicht_ausgefuehrte_codezellen": 0,
+    "backbone_unveraendert": true,
+    "bildmodell_und_feature_cache_stimmen_ueberein": true,
+    "widget_zustand_gespeichert": true
+  },
+  "set15_pruefung": {
+    "notebooks": 5,
+    "beispiele": 3,
+    "fragen": 18,
+    "fehler_outputs": 0,
+    "neuer_prozess_sklearn": true,
+    "neuer_prozess_custom_transformer": true,
+    "neuer_prozess_pytorch_cpu": true,
+    "vorhersagen_nach_laden_geprueft": true
+  }
+}

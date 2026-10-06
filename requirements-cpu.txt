@@ -1,0 +1,5 @@
+# Nur NN2: offizielle CPU-Wheels, keine CUDA-/GPU-Pakete.
+# Zuerst requirements.txt installieren, danach diese Datei.
+--index-url https://download.pytorch.org/whl/cpu
+torch==2.14.1+cpu
+torchvision==0.29.1+cpu

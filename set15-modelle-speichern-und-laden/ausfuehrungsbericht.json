@@ -1,0 +1,44 @@
+{
+  "ergebnisse": [
+    {
+      "notebook": "set15-modelle-speichern-und-laden\\01_sklearn_pipeline_speichern_und_laden.ipynb",
+      "codezellen": 6,
+      "status": "ok",
+      "dauer_s": 9.54,
+      "ausgefuehrte_codezellen": 6,
+      "outputs": 6
+    },
+    {
+      "notebook": "set15-modelle-speichern-und-laden\\02_sklearn_eigener_transformer_und_modellpaket.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 4.66,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 5
+    },
+    {
+      "notebook": "set15-modelle-speichern-und-laden\\03_pytorch_gewichte_speichern_und_laden_cpu.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 9.66,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 9
+    },
+    {
+      "notebook": "set15-modelle-speichern-und-laden\\uebungen\\01_fragen_modelle_speichern_und_laden.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.01,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "set15-modelle-speichern-und-laden\\uebungen\\loesungen\\01_loesungen_fragen_modelle_speichern_und_laden.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.01,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    }
+  ]
+}

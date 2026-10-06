@@ -1,0 +1,18 @@
+{
+  "bike": {
+    "quelle": "https://archive.ics.uci.edu/static/public/275/bike+sharing+dataset.zip",
+    "lizenz": "CC BY 4.0",
+    "archiv_sha256": "b70182d0d0508e9abbb79306ce5c0cec34869000f8220175ac83d11dbe845401",
+    "datei": "bike_day.csv",
+    "datei_sha256": "a6bcf826782d3c0fbfdcbeead17cd0884185a0dafe8ff10cd48a874ee7ba18be",
+    "aenderung": "Original day.csv unverändert, lokal in bike_day.csv umbenannt."
+  },
+  "energie": {
+    "quelle": "https://archive.ics.uci.edu/static/public/374/appliances+energy+prediction.zip",
+    "lizenz": "CC BY 4.0",
+    "archiv_sha256": "2fccf354445d886e7917620b0195db1f3e3e34d5a067a93b844694a4c561255a",
+    "datei": "energie_sensoren.csv",
+    "datei_sha256": "fa366415c8836bc0693748b1788c7ce31345ec63ace99d0cb18b12495fec240e",
+    "aenderung": "Nur date, Appliances, T1 und RH_1 übernommen; alle Zeilen unverändert."
+  }
+}

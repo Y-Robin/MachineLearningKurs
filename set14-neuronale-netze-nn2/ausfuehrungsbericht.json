@@ -1,0 +1,76 @@
+{
+  "ergebnisse": [
+    {
+      "notebook": "01_pytorch_ziffern_und_pixel.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 7.65,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 15
+    },
+    {
+      "notebook": "02_cnn_filter_pooling_und_feature_maps.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 7.7,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 13
+    },
+    {
+      "notebook": "03_transfer_learning_nur_der_kopf.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 20.92,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 13
+    },
+    {
+      "notebook": "uebungen\\01_uebung_kleines_cnn.ipynb",
+      "codezellen": 6,
+      "status": "ok",
+      "dauer_s": 4.25,
+      "ausgefuehrte_codezellen": 6,
+      "outputs": 2
+    },
+    {
+      "notebook": "uebungen\\02_uebung_transfer_zwei_ziffern.ipynb",
+      "codezellen": 6,
+      "status": "ok",
+      "dauer_s": 7.36,
+      "ausgefuehrte_codezellen": 6,
+      "outputs": 2
+    },
+    {
+      "notebook": "uebungen\\03_fragen_computer_vision.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.98,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "uebungen\\loesungen\\01_loesung_kleines_cnn.ipynb",
+      "codezellen": 5,
+      "status": "ok",
+      "dauer_s": 9.12,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 12
+    },
+    {
+      "notebook": "uebungen\\loesungen\\02_loesung_transfer_zwei_ziffern.ipynb",
+      "codezellen": 4,
+      "status": "ok",
+      "dauer_s": 6.29,
+      "ausgefuehrte_codezellen": 4,
+      "outputs": 7
+    },
+    {
+      "notebook": "uebungen\\loesungen\\03_loesungen_fragen_computer_vision.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 0.99,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "ergebnisse": [
+    {
+      "notebook": "01_zeitreihen_darstellen_und_fenster_interaktiv.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 3.55,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 11
+    },
+    {
+      "notebook": "02_trend_saisonalitaet_und_autokorrelation.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 4.44,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 12
+    },
+    {
+      "notebook": "03_zeitlicher_split_lags_und_backtesting.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 3.47,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 9
+    },
+    {
+      "notebook": "04_arima_prognosehorizont_und_unsicherheit.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 4.46,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 12
+    },
+    {
+      "notebook": "05_echte_daten_bike_sharing_prognose.ipynb",
+      "codezellen": 8,
+      "status": "ok",
+      "dauer_s": 3.51,
+      "ausgefuehrte_codezellen": 8,
+      "outputs": 12
+    },
+    {
+      "notebook": "uebungen\\01_uebung_fenster_und_backtesting.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 2.69,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 1
+    },
+    {
+      "notebook": "uebungen\\02_uebung_echte_energie_sensoren.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 3.0,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 2
+    },
+    {
+      "notebook": "uebungen\\03_fragen_zeitreihen.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 1.02,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    },
+    {
+      "notebook": "uebungen\\loesungen\\01_loesung_fenster_und_backtesting.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 3.47,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 11
+    },
+    {
+      "notebook": "uebungen\\loesungen\\02_loesung_echte_energie_sensoren.ipynb",
+      "codezellen": 7,
+      "status": "ok",
+      "dauer_s": 3.53,
+      "ausgefuehrte_codezellen": 7,
+      "outputs": 13
+    },
+    {
+      "notebook": "uebungen\\loesungen\\03_loesungen_fragen_zeitreihen.ipynb",
+      "codezellen": 0,
+      "status": "nur_markdown",
+      "dauer_s": 4.11,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
+    }
+  ]
+}
