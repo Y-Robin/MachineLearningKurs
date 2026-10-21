@@ -1,29 +1,33 @@
 # Set 12 - Zeitreihenanalyse
 
-Fünf Beispiele führen von Darstellung und Fensterwahl zur Prognose auf echten Daten. Danach folgen zwei Übungen und ein Fragenkatalog mit 25 Fragen. Alle Notebooks sind mit Python 3.11+ und den Abhängigkeiten aus dem Haupt-`requirements.txt` ausführbar.
+Sechs Notebooks erklären Zeitreihen und Prognosen. Die Prognosebeispiele 03 bis 05 verwenden einfache synthetische Daten; alle Prognosefits verwenden ausschließlich `statsmodels.tsa.arima.model.ARIMA`.
 
 | Reihenfolge | Notebook | Thema |
 |---|---|---|
-| 1 | `01_zeitreihen_darstellen_und_fenster_interaktiv.ipynb` | Übersicht/Detail, Bereichs- und Fensterregler, kausale vs. zentrierte Glättung, Resampling und Lücken |
-| 2 | `02_trend_saisonalitaet_und_autokorrelation.ipynb` | STL, ACF/PACF, Lag-Regler, Differenzierung und ADF-Test |
-| 3 | `03_zeitlicher_split_lags_und_backtesting.ipynb` | Prognoseauftrag, kausale Lags, Expanding/Sliding Window, Pipeline, Baselines und finaler Test |
-| 4 | `04_arima_prognosehorizont_und_unsicherheit.ipynb` | Kleine ARIMA-Modellwahl, Horizontregler, Prognoseintervalle, fester Ursprung vs. rollende Prognose |
-| 5 | `05_echte_daten_bike_sharing_prognose.ipynb` | Tägliche Fahrrad-Ausleihen, chronologische Validierung, Baselines und Testfehler |
+| 1 | `01_zeitreihen_darstellen_und_fenster_interaktiv.ipynb` | Zeitindex, Ausschnitt, Glättungsfenster, Resampling und Lücken |
+| 2 | `02_trend_saisonalitaet_und_autokorrelation.ipynb` | Trend, Saison, STL, ACF/PACF und Differenzierung |
+| 3 | `03_zeitlicher_split_lags_und_backtesting.ipynb` | Sinus plus Trend, kausale Lags, chronologische Folds und ARIMA-Modellwahl |
+| 4 | `03b_ar_ma_und_arma.ipynb` | AR/MA/ARMA ausdrücklich mit ARIMA fitten; Schockwirkung und Sinus-Vergleich |
+| 5 | `04_arima_prognosehorizont_und_unsicherheit.ipynb` | Sinus plus Trend, d=0/d=1 und expliziter Trend im Plot, Tagesmerkmale, feste/rollende Prognose und Unsicherheit |
+| 6 | `05_synthetische_daten_modellvergleich.ipynb` | Sinus, Sinus plus Trend, Rauschen; vollständige Modell-, Baseline- und Testtag-Tabellen |
 
-Die Beispiele 1-4 verwenden reproduzierbare generierte Sensorreihen; Beispiel 5 verwendet echte Ausleihdaten. Die beiden Übungen behandeln Fenster/Backtesting auf synthetischen Daten und eine stündliche Energieprognose aus echten 10-Minuten-Sensormessungen. Lokale Musterlösungen liegen in `uebungen/loesungen` und bleiben wie in den anderen Sets von Git ausgeschlossen.
+## Klar sichtbare Prognosen und Zahlen
 
-## Darstellung und Interaktivität
+`zeitreihen_demos.py` erzeugt reproduzierbare Dummy-Daten: Niveau 50, Sinusamplitude 8, Periode 24 h, optional Trend +0.08 SE/h, Rauschstandardabweichung 0.03, Seed 42. Die geringe Rauschstärke dient der Erklärung. Die Modelle erhalten keine zukünftigen Messwerte.
 
-Die Diagramme verwenden kompakte Datumsachsen, Einheiten, markierte Zeitbereiche und Überblick/Detail. Die Regler ändern Anzeigeausschnitt, Fensterbreite, Zentrierung, Lag und Prognosehorizont. Gespeicherte statische Vorschauen sind sofort lesbar. Für Änderungen an Reglern müssen die Zellen in JupyterLab mit laufendem Kernel ausgeführt werden; gespeicherter Widget-Zustand allein führt keine neue Berechnung durch.
+Ein AR-Modell ist ein ARIMA-Spezialfall mit d=q=0; MA hat p=d=0; ARMA hat d=0. Für die nahezu rauschfreie Sinus-Schwingung wird der stationäre Grenzbereich erlaubt. Sinus/Cosinus-Tagesmerkmale für ARIMA werden nur aus der Uhrzeit gebildet; Amplitude, Drift und Modellparameter werden gefittet.
 
-## Methodischer Rahmen
+Training: 01.01.–10.01.2024 (240 Stunden). Validierung: 11.01.–12.01. (48 Stunden). Test: 13.01.–15.01. (72 Stunden). Notebook 05 zeigt alle Modellfamilien und beide Baselines, getrennt nach festen 72 h und rollender 1 h. Positive Prozentwerte in den Tabellen bedeuten weniger MAE als die jeweilige Baseline. Eine Übersicht zeigt das anhand der Validierung gewählte Modell; eine weitere Tabelle zerlegt den Test in einzelne Tage.
 
-- Vor dem Modellieren sind Ursprung, Horizont und verfügbare Informationen definiert.
-- Zeitgrenzen werden vor der Trainingsanalyse festgelegt. Modellwahl nutzt Training/Validierung; Testwerte werden erst zur finalen Bewertung betrachtet.
-- Lag-/Rollmerkmale schauen nur zurück. Kalendermerkmale sind vorab bekannt. Gelernte Skalierung bleibt in der Pipeline bzw. im Trainingsfold.
-- Rollende Ein-Schritt-Vorhersagen dürfen inzwischen eingetroffene frühere Testmessungen nutzen. Ein Mehr-Schritt-Forecast mit festem Ursprung darf dies nicht.
-- Die PDF `ML_Set_01_04.pdf` behandelt allgemeine Datenanalyse und Splits, darunter den chronologischen Split auf Seite 24. Sie liefert das Prinzip für dieses zusätzliche Zeitreihenset; STL/ARIMA sind die hier ergänzten Methoden.
+Die Ausführung von Notebook 05 schreibt `auswertung_set12.csv` (vollständige Testtabelle mit Zeitgrenzen) und `auswertung_set12_uebersicht.csv` (kompakte Modell-/Baseline-Befunde). Die CSV-Werte entsprechen den im Notebook ausgegebenen Tabellen.
 
-## Echte Daten und Quellen
+## Prognoseprotokoll und Interaktivität
 
-Die beiden kleinen Datenauswahlen liegen unter `daten` und sind laut UCI unter CC BY 4.0 kommerziell nutzbar mit Quellenangabe. Details, Änderungen, Lizenzlinks und Herkunft stehen in `daten/README.md` und `daten/quellen_manifest.json`. Beide Praxisaufgaben funktionieren offline.
+- Ein fester Ursprung erhält innerhalb seines Zukunftsblocks keine neuen Messwerte. Die Vortags-Baseline wiederholt deshalb den letzten bekannten Zyklus.
+- Bei der rollenden Ein-Stunden-Prognose wird erst vorhergesagt und danach die gemessene Stunde übernommen; Modellparameter bleiben fest.
+- Die Kandidaten stehen vor dem Vergleich fest; Modellwahl verwendet Training/Validierung. Auch schlechtere Testresultate werden gezeigt.
+- Der Horizontregler in 04 verändert nur die Anzeige der bereits erstellten Prognose. Interaktion braucht einen laufenden Jupyter-Kernel; die statischen Ausgaben sind gespeichert.
+
+## Übungen und optionale echte Daten
+
+Zwei Übungen und ein Fragenkatalog ergänzen das Set. Prognosefits sind auch in den Aufgaben als ARIMA vorgesehen. Die Energie-Sensorübung ist eine zusätzliche reale Anwendung. Bike- und Energiedaten bleiben offline unter `daten` verfügbar; Herkunft und Lizenz stehen in `daten/README.md`. Das frühere Bike-Hauptbeispiel 05 wurde durch den kontrollierten synthetischen Vergleich ersetzt.

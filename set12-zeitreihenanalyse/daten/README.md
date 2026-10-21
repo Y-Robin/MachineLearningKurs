@@ -11,7 +11,7 @@ Lizenz: https://creativecommons.org/licenses/by/4.0/
 - Quelle: https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset
 - Lokal: `bike_day.csv`, 731 tägliche Einträge von 01.01.2011 bis 31.12.2012.
 - Änderung: Original `day.csv` unverändert übernommen und lediglich umbenannt; keine Zeilen/Spalten verändert.
-- Ziel im Beispiel: `cnt`, Anzahl täglicher Ausleihen. `casual` und `registered` sind Zielbestandteile und werden nicht als Features genutzt. Tageswetterwerte werden nicht als vorab bekannte Forecast-Eingaben behandelt.
+- Ziel im Beispiel: `cnt`, Anzahl täglicher Ausleihen. `casual` und `registered` sind Zielbestandteile und werden nicht als Features genutzt. Gemessenes Wetter des Zieltags wird nicht als vorab bekannte Forecast-Eingabe behandelt. Die Bike-Datei bleibt als optionale echte Datenquelle erhalten. Das Hauptbeispiel 05 verwendet jetzt synthetische Sinusdaten und benötigt diese Datei nicht.
 
 ## Appliances Energy Prediction
 

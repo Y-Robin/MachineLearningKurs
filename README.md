@@ -135,9 +135,11 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 │   ├── 01_zeitreihen_darstellen_und_fenster_interaktiv.ipynb
 │   ├── 02_trend_saisonalitaet_und_autokorrelation.ipynb
 │   ├── 03_zeitlicher_split_lags_und_backtesting.ipynb
+│   ├── 03b_ar_ma_und_arma.ipynb
 │   ├── 04_arima_prognosehorizont_und_unsicherheit.ipynb
-│   ├── 05_echte_daten_bike_sharing_prognose.ipynb
+│   ├── 05_synthetische_daten_modellvergleich.ipynb
 │   ├── zeitreihen_tools.py
+│   ├── zeitreihen_demos.py
 │   ├── README.md
 │   ├── daten/
 │   │   ├── bike_day.csv
@@ -197,7 +199,7 @@ Beide Notebooks laden beim ersten Start nur vier kleine MATLAB-Aufnahmen direkt 
 
 ## Set 12: Zeitreihenanalyse
 
-Fünf Beispiele behandeln interaktive Bereichs-/Fensterwahl, Trend/Saisonalität/Autokorrelation, zeitliches Backtesting, ARIMA und einen Test auf echten Fahrrad-Ausleihdaten. Zwei Übungen und ein Fragenkatalog mit 25 Fragen ergänzen das Set. Eine Übung verwendet echte Energie-Sensordaten. Beide Datenauswahlen liegen offline vor und sind unter CC BY 4.0 kommerziell nutzbar mit Quellenangabe.
+Sechs Beispiele behandeln Darstellung/Fensterwahl, Trend/Saisonalität, Backtesting sowie AR, MA, ARMA und ARIMA. Alle Prognosefits verwenden ARIMA. Die Hauptbeispiele nutzen leicht erkennbare Sinus-Dummy-Daten und zeigen Modell-/Baseline-Tabellen mit Zeiträumen, MAE/RMSE und Verbesserungen. Zwei Übungen und ein Fragenkatalog ergänzen das Set; die zusätzliche Energieübung verwendet offline verfügbare reale Sensordaten.
 
 Die Notebooks enthalten gespeicherte Outputs. Für Änderungen der Slider müssen die Zellen mit laufendem Kernel ausgeführt werden. Überblick und Quellen: `set12-zeitreihenanalyse/README.md`.
 
