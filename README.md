@@ -188,104 +188,63 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
         └── loesungen/
 ```
 
-## Set 3: echte Sensorsignale und Feature Engineering
+## Einstieg mit Visual Studio Code
 
-Nach der tabellarischen EDA folgen zwei zusammenhängende Beispiele:
+### 1. Python und VS Code installieren
 
-- `05_sensor_signale_fft_features.ipynb`: echte Kugellager-Beschleunigungssignale, geschätzte Umdrehungsfenster, FFT und Zeit-/Frequenzmerkmale pro Messfenster.
-- `06_pca_sensor_features.ipynb`: Korrelationen, Standardisierung, anschauliche PCA-Achsen, Komponentengewichte und die Berechnung neuer Merkmale.
+Installiere [Python ab Version 3.11](https://www.python.org/downloads/) und [Visual Studio Code](https://code.visualstudio.com/). Aktiviere bei der Python-Installation unter Windows die Option **Add python.exe to PATH**, falls sie angeboten wird.
 
-Beide Notebooks laden beim ersten Start nur vier kleine MATLAB-Aufnahmen direkt vom CWRU Bearing Data Center in `set3-datenanalyse-und-visualisierung/daten/cwru`. Danach nutzen sie den lokalen Cache offline. Internet ist nur beim ersten Download nötig. Die neuen Notebooks enthalten kleine Aufgaben; die Hilfsdatei `sensor_features.py` bündelt Laden und Feature-Berechnung. Quellen und Datenauswahl stehen in `set3-datenanalyse-und-visualisierung/daten/README.md`.
+Öffne in VS Code die Ansicht **Erweiterungen / Extensions** und installiere diese beiden Erweiterungen von Microsoft:
 
-## Set 12: Zeitreihenanalyse
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 
-Sechs Beispiele behandeln Darstellung/Fensterwahl, Trend/Saisonalität, Backtesting sowie AR, MA, ARMA und ARIMA. Alle Prognosefits verwenden ARIMA. Die Hauptbeispiele nutzen leicht erkennbare Sinus-Dummy-Daten und zeigen Modell-/Baseline-Tabellen mit Zeiträumen, MAE/RMSE und Verbesserungen. Zwei Übungen und ein Fragenkatalog ergänzen das Set; die zusätzliche Energieübung verwendet offline verfügbare reale Sensordaten.
+### 2. Kursordner öffnen und Pakete installieren
 
-Die Notebooks enthalten gespeicherte Outputs. Für Änderungen der Slider müssen die Zellen mit laufendem Kernel ausgeführt werden. Überblick und Quellen: `set12-zeitreihenanalyse/README.md`.
+Lade das Repository herunter und entpacke es oder klone es mit Git. Öffne anschließend in VS Code über **Datei → Ordner öffnen** den Kursordner mit der Datei `requirements.txt`.
 
-## NN1 und NN2: Sets 13 und 14
+Öffne über **Terminal → Neues Terminal** das integrierte Terminal. Erstelle dort eine virtuelle Umgebung für die Kurspakete und installiere die Abhängigkeiten:
 
-Die bisherigen neuronalen Netze liegen als NN1 auf Platz 13. Unüberwachtes Lernen und Zeitreihen sind dafür auf Plätze 11 und 12 gerückt. NN2 / Set 14 ergänzt drei CPU-PyTorch-Beispiele: Ziffernerkennung, ein kleines CNN mit sichtbaren Filtern/Feature Maps und Transfer Learning mit vortrainiertem MobileNet-Backbone und ausschließlich neu trainiertem Kopf. Dazu kommen zwei einfache Übungen und 20 Fragen.
-
-PyTorch für NN2 separat als CPU-Build installieren:
-
-```powershell
-.venv\Scripts\python.exe -m pip install -r requirements-cpu.txt
-```
-
-Vorher die normalen Kursabhängigkeiten aus `requirements.txt` installieren. Die CPU-Datei verwendet den offiziellen CPU-Wheel-Index und fixiert zusammenpassende getestete Versionen. Überblick: `set14-neuronale-netze-nn2/README.md`.
-
-## Set 15: Modelle speichern und laden
-
-Drei kurze Beispiele mit scikit-learn und CPU-PyTorch zeigen gespeicherte Pipelines, eigene Transformer und getrennte Architektur/Gewichte. Alle Modelle werden in einem neuen Python-Prozess geladen und ihre Vorhersagen verglichen. Dazu kommen 18 Übungsfragen und lokale Musterantworten. Einstieg: `set15-modelle-speichern-und-laden/README.md`. PyTorch verwendet dieselbe `requirements-cpu.txt` wie NN2.
-
-## Voraussetzungen
-
-- Python 3.11 oder neuer
-- ein Terminal (PowerShell, Terminal oder Bash)
-- optional: Git
-
-Prüfe deine Python-Version:
-
-```bash
-python --version
-```
-
-Unter Windows kann der Befehl stattdessen `py --version` lauten.
-
-## Installation mit virtueller Umgebung
-
-Eine virtuelle Umgebung hält die Pakete dieses Kurses von anderen Python-Projekten getrennt.
-
-### Windows PowerShell
+**Windows (PowerShell)**
 
 ```powershell
 py -m venv .venv
-.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-python -m jupyter lab
-```
-
-Falls PowerShell das Aktivierungsskript blockiert, kann die Umgebung auch ohne Aktivierung verwendet werden:
-
-```powershell
 .venv\Scripts\python.exe -m pip install -r requirements.txt
-.venv\Scripts\python.exe -m jupyter lab
 ```
 
-### macOS und Linux
+**macOS / Linux**
 
 ```bash
 python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-python -m jupyter lab
+.venv/bin/python -m pip install -r requirements.txt
 ```
 
-Jupyter öffnet sich normalerweise automatisch im Browser. Starte mit dem ersten Notebook in `set1-python-grundlagen` und führe die Zellen der Reihe nach mit `Shift + Enter` aus.
+Für die PyTorch-Beispiele in Set 14 und 15 installierst du unter Windows/Linux zusätzlich die CPU-Pakete:
 
-## Empfohlene Arbeitsweise
+```powershell
+# Windows
+.venv\Scripts\python.exe -m pip install -r requirements-cpu.txt
+```
 
-1. Virtuelle Umgebung aktivieren.
-2. JupyterLab starten.
-3. Notebook von oben nach unten durcharbeiten.
-4. Beispiele verändern und erneut ausführen.
-5. Übungen zuerst selbst lösen und danach die Musterlösung ausführen.
+```bash
+# Linux
+.venv/bin/python -m pip install -r requirements-cpu.txt
+```
 
-Die Aufgaben eines Sets liegen jeweils im Unterordner `uebungen`. Zugehörige Musterlösungen befinden sich lokal in `uebungen/loesungen`. Alle solchen Lösungsordner werden absichtlich nicht von Git erfasst, damit die Lösungen nicht versehentlich zusammen mit den Aufgaben veröffentlicht werden.
+### 3. Notebook öffnen und Kernel auswählen
 
-## Hinweise zu Jupyter
+1. Öffne `set1-python-grundlagen/01_python_setup_und_bibliotheken.ipynb` im Datei-Explorer von VS Code.
+2. Klicke oben rechts auf **Kernel auswählen / Select Kernel**. Wähle bei Bedarf **Anderen Kernel auswählen / Select Another Kernel → Python-Umgebungen / Python Environments** und anschließend die Umgebung `.venv` im Kursordner.
+3. Führe die Zellen von oben nach unten mit **Shift + Enter** aus. Codezellen führen Python aus, Markdown-Zellen enthalten Erklärungen.
 
-- Eine **Markdown-Zelle** enthält Erklärtext.
-- Eine **Code-Zelle** enthält ausführbaren Python-Code.
-- Mit `Shift + Enter` wird eine Zelle ausgeführt.
-- Arbeite die Zellen am besten von oben nach unten durch.
-- Falls Ergebnisse merkwürdig wirken, starte das Notebook neu und führe alle Zellen noch einmal der Reihe nach aus.
+Beim nächsten Mal öffnest du den Kursordner und das gewünschte Notebook wieder in VS Code und verwendest denselben `.venv`-Kernel. Weitere Hinweise stehen in der [VS-Code-Anleitung für Jupyter-Notebooks](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
 
-## Lizenz / Nutzung
+## Mit dem Kurs arbeiten
 
-Die Materialien sind als begleitende Beispiele für den ML-Kurs gedacht und können innerhalb des Kurses angepasst und erweitert werden.
+Arbeite die Sets der Reihe nach durch, probiere die Beispiele aus und verändere einzelne Werte. Löse anschließend die Aufgaben im jeweiligen Ordner `uebungen`. Falls vorhanden, findest du die Musterlösungen lokal unter `uebungen/loesungen`.
 
-Für externe Beispieldaten gelten die jeweils im Datenordner dokumentierten Lizenzen und Quellenangaben.
+Interaktive Regler funktionieren, nachdem du die zugehörigen Zellen ausgeführt hast. Wenn Ergebnisse unerwartet sind, starte den Kernel über die Notebook-Werkzeugleiste neu und führe alle Zellen erneut aus.
+
+## Nutzung und Datenquellen
+
+Die Materialien begleiten den ML-Kurs und können innerhalb des Kurses angepasst und erweitert werden. Quellen und Lizenzen externer Beispieldaten stehen in den jeweiligen Datenordnern.
