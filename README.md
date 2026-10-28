@@ -28,6 +28,8 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 │   ├── 04_eda_predictive_maintenance.ipynb
 │   ├── 05_sensor_signale_fft_features.ipynb
 │   ├── 06_pca_sensor_features.ipynb
+│   ├── 07_datenerfassung_und_doe.ipynb
+│   ├── 08_kaggle_datensaetze_laden.ipynb
 │   ├── sensor_features.py
 │   ├── daten/
 │   │   ├── palmer_penguins.csv
@@ -38,15 +40,22 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 │       ├── 01_uebungen_pandas.ipynb
 │       ├── 02_fragen_datenanalyse_visualisierung.ipynb
 │       ├── 03_programmieruebungen_eda.ipynb
+│       ├── 04_uebung_datenerfassung_doe.ipynb
+│       ├── 05_uebung_datensatz_dokumentation.ipynb
 │       └── loesungen/
 ├── set4-machine-learning-mit-scikit-learn/
 │   ├── 01_daten_verstehen_und_visualisieren.ipynb
 │   ├── 02_sklearn_transformer_basics.ipynb
 │   ├── 03_preprocessing_mit_pipeline.ipynb
+│   ├── 04_daten_richtig_aufteilen.ipynb
+│   ├── 05_kreuzvalidierung_ohne_data_leakage.ipynb
+│   ├── 06_klassenungleichgewicht_und_smote.ipynb
 │   └── uebungen/
 │       ├── 01_uebungen_datenanalyse.ipynb
 │       ├── 02_fragen_preprocessing_pipeline.ipynb
 │       ├── 03_programmieruebungen_preprocessing.ipynb
+│       ├── 04_uebung_splits_und_kreuzvalidierung.ipynb
+│       ├── 05_uebung_klassenungleichgewicht.ipynb
 │       └── loesungen/
 ├── set5-lineare-und-logistische-regression/
 │   ├── 01_lineare_regression.ipynb

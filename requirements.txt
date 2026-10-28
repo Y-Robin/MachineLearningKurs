@@ -11,6 +11,7 @@ scipy>=1.13,<2
 
 # Machine Learning
 scikit-learn>=1.5,<2
+imbalanced-learn>=0.14,<0.15  # SMOTE und Sampling-Pipelines (Set 4)
 
 # Zeitreihenanalyse (Set 12)
 statsmodels>=0.14,<0.16
