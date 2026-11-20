@@ -1,74 +1,69 @@
 {
+  "fassung": "Kurzes Intro",
+  "datum": "2026-11-13",
+  "pruefung": "Alle neun Notebooks mit frischem Kernel ausgeführt; Outputs gespeichert.",
+  "umgebung": "Kern und Übungen: vorhandene .venv, torch 2.15.0+cpu. Transfer: isolierte CPU-Pakete torch 2.14.1+cpu und torchvision 0.29.1+cpu aus requirements-cpu.txt. Die vorhandene .venv enthält stattdessen das alte Paket torch_vision und wurde nicht verändert.",
   "ergebnisse": [
     {
       "notebook": "01_pytorch_ziffern_und_pixel.ipynb",
-      "codezellen": 8,
       "status": "ok",
-      "dauer_s": 7.65,
+      "codezellen": 8,
       "ausgefuehrte_codezellen": 8,
-      "outputs": 15
+      "outputs": 10
     },
     {
       "notebook": "02_cnn_filter_pooling_und_feature_maps.ipynb",
-      "codezellen": 7,
       "status": "ok",
-      "dauer_s": 7.7,
-      "ausgefuehrte_codezellen": 7,
-      "outputs": 13
+      "codezellen": 9,
+      "ausgefuehrte_codezellen": 9,
+      "outputs": 12
     },
     {
       "notebook": "03_transfer_learning_nur_der_kopf.ipynb",
-      "codezellen": 7,
       "status": "ok",
-      "dauer_s": 20.92,
-      "ausgefuehrte_codezellen": 7,
-      "outputs": 13
+      "codezellen": 6,
+      "ausgefuehrte_codezellen": 6,
+      "outputs": 6
     },
     {
       "notebook": "uebungen\\01_uebung_kleines_cnn.ipynb",
-      "codezellen": 6,
       "status": "ok",
-      "dauer_s": 4.25,
-      "ausgefuehrte_codezellen": 6,
-      "outputs": 2
+      "codezellen": 5,
+      "ausgefuehrte_codezellen": 5,
+      "outputs": 4
     },
     {
       "notebook": "uebungen\\02_uebung_transfer_zwei_ziffern.ipynb",
-      "codezellen": 6,
       "status": "ok",
-      "dauer_s": 7.36,
-      "ausgefuehrte_codezellen": 6,
-      "outputs": 2
+      "codezellen": 1,
+      "ausgefuehrte_codezellen": 1,
+      "outputs": 1
     },
     {
       "notebook": "uebungen\\03_fragen_computer_vision.ipynb",
+      "status": "ok",
       "codezellen": 0,
-      "status": "nur_markdown",
-      "dauer_s": 0.98,
       "ausgefuehrte_codezellen": 0,
       "outputs": 0
     },
     {
       "notebook": "uebungen\\loesungen\\01_loesung_kleines_cnn.ipynb",
-      "codezellen": 5,
       "status": "ok",
-      "dauer_s": 9.12,
+      "codezellen": 5,
       "ausgefuehrte_codezellen": 5,
-      "outputs": 12
+      "outputs": 5
     },
     {
       "notebook": "uebungen\\loesungen\\02_loesung_transfer_zwei_ziffern.ipynb",
-      "codezellen": 4,
       "status": "ok",
-      "dauer_s": 6.29,
-      "ausgefuehrte_codezellen": 4,
-      "outputs": 7
+      "codezellen": 0,
+      "ausgefuehrte_codezellen": 0,
+      "outputs": 0
     },
     {
       "notebook": "uebungen\\loesungen\\03_loesungen_fragen_computer_vision.ipynb",
+      "status": "ok",
       "codezellen": 0,
-      "status": "nur_markdown",
-      "dauer_s": 0.99,
       "ausgefuehrte_codezellen": 0,
       "outputs": 0
     }

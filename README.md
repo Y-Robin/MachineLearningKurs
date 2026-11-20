@@ -141,6 +141,9 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 │       ├── 04_fragen_unueberwachtes_lernen.ipynb
 │       └── loesungen/
 ├── set12-zeitreihenanalyse/
+│   ├── 00_arma_arima_ganz_einfach.ipynb
+│   ├── 00_b_arma_mit_externen_merkmalen.ipynb
+│   ├── 00_c_schrittweise_arma_und_regression.ipynb
 │   ├── 01_zeitreihen_darstellen_und_fenster_interaktiv.ipynb
 │   ├── 02_trend_saisonalitaet_und_autokorrelation.ipynb
 │   ├── 03_zeitlicher_split_lags_und_backtesting.ipynb
@@ -157,6 +160,7 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 │   │   ├── quellen_manifest.json
 │   │   └── README.md
 │   └── uebungen/
+│       ├── 00_uebung_arma_arima_einfach.ipynb
 │       ├── 01_uebung_fenster_und_backtesting.ipynb
 │       ├── 02_uebung_echte_energie_sensoren.ipynb
 │       ├── 03_fragen_zeitreihen.ipynb

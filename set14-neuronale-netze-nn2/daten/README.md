@@ -9,7 +9,7 @@
 - Lizenz: https://creativecommons.org/licenses/by/4.0/
 - Verwendete Auswahl: `sklearn.datasets.load_digits()`, 1797 Bilder, je 8×8 Graustufenwerte im Bereich 0–16. Laut scikit-learn eine Kopie des Testteils des UCI-Datensatzes; sie ist direkt im installierten Paket verfügbar und braucht keinen Download.
 - API: https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html
-- Änderungen: feste Division durch 16, Umformung nach N×1×8×8 und neuer reproduzierbarer stratifizierter Bildsplit 60/20/20. Die Schreibenden-IDs stehen in dieser Auswahl nicht zur Verfügung; deshalb wird kein Test auf unbekannte Personen behauptet.
+- Änderungen: feste Division durch 16, Umformung nach N×1×8×8 und reproduzierbarer stratifizierter Bildsplit 80/20 für Training/Test (feste Architektur und Epochenzahl, keine Modellwahl). Die Schreibenden-IDs stehen in dieser Auswahl nicht zur Verfügung; deshalb wird kein Test auf unbekannte Personen behauptet.
 
 ## MobileNetV3 Small
 
@@ -17,8 +17,8 @@
 - Modellreferenz: https://docs.pytorch.org/vision/stable/models/generated/torchvision.models.mobilenet_v3_small.html
 - Original-Gewichtsdatei: https://download.pytorch.org/models/mobilenet_v3_small-047dcff4.pth
 - Die Gewichte sind auf ImageNet vortrainiert. Sie sind keine Bestandteile des CC-BY-Zifferndatensatzes; dessen Lizenz wird nicht auf Gewichte oder ImageNet übertragen.
-- Der erste Aufruf lädt die etwa 10 MB große Datei mit der Hashprüfung von torchvision nach `torch_cache/checkpoints`. Danach laufen die Beispiele mit dem lokalen Cache offline.
-- Änderung für den Kurs: ImageNet-Kopf entfernt, Backbone eingefroren, neuer linearer Kopf mit zehn bzw. zwei Outputs. RGB-Umwandlung und das offizielle Gewichts-Preprocessing werden übernommen. Hochskalierung erzeugt keine neue reale Bildinformation.
-- Feature-Vektoren werden lokal in `feature_cache` gespeichert. Der Cache-Schlüssel berücksichtigt Bilder, Transformation und Backbone-Zustand. Er enthält Rohfeatures ohne zielgelernte Normalisierung. Ein geänderter Kopf kann dieselben Features weiterverwenden.
+- Der erste Aufruf lädt die etwa 10 MB große Datei nach `torch_cache/checkpoints`. Danach laufen die Beispiele mit dem lokalen Cache offline.
+- Änderung für den Kurs: ImageNet-Kopf entfernt, Backbone eingefroren, neuer linearer Kopf mit zwei Outputs für Ziffer 2 gegen 3. RGB-Umwandlung und das offizielle Gewichts-Preprocessing werden übernommen. Hochskalierung erzeugt keine neue reale Bildinformation.
+- Feature-Vektoren werden einmal in kleinen Batches berechnet und nur im Arbeitsspeicher gehalten. Das kurze Intro braucht keinen Feature-Cache und keine zusätzliche Feature-Normalisierung.
 
-Die Cacheordner sind von Git ausgeschlossen. Herkunft und API-Angaben wurden am 06.10.2026 geprüft.
+Die Cacheordner sind von Git ausgeschlossen. Die Quellenangaben stammen aus der bisherigen Fassung; der Unterrichtsablauf wurde am 13.11.2026 vereinfacht.

@@ -1,34 +1,69 @@
-# Set 14 - NN2: Computer Vision mit PyTorch (CPU)
+# Set 14 – Kurzes Intro: Bilder, PyTorch und CNNs
 
-NN2 ergänzt NN1 / Set 13. Drei überschaubare Beispiele führen von Pixeln zum CNN und zur Übertragung eines vortrainierten Vision-Backbones. Dazu kommen zwei kurze Übungen, lokale Musterlösungen und ein Fragenkatalog mit 20 Fragen.
+**Leitfrage: Wie wird aus einem Bild eine vorhergesagte Ziffer?**
+Voraussetzung ist das MLP aus Set 13. Der Kern dauert etwa **35 Minuten**;
+mit Miniübung etwa 40–45 Minuten. Zeiten sind Richtwerte für die Erklärung.
 
-| Beispiel | Inhalt |
-|---|---|
-| `01_pytorch_ziffern_und_pixel.ipynb` | Bilder/Tensorformen, kleines MLP, Trainingsschritt, Lernkurven, Confusion Matrix, Ziffern-/Rausch-/Verschiebungsregler |
-| `02_cnn_filter_pooling_und_feature_maps.ipynb` | Handgewählte Kantenfilter, Max-/Average-Pooling, kleines CNN, gelernte Filter und interaktive Feature Maps |
-| `03_transfer_learning_nur_der_kopf.ipynb` | MobileNetV3 Small, eingefrorener Backbone, offizielles Preprocessing, Feature-Cache und ausschließlich neuer Kopf |
+## Der Weg durch die Stunde
 
-## CPU-Installation
+| Reihenfolge | Notebook | Inhalt | Richtzeit |
+|---|---|---|---|
+| 1 | [Vom Bild zur Vorhersage](01_pytorch_ziffern_und_pixel.ipynb) | Pixel, Tensorform, MLP, fünf Trainingsschritte, Test | 20 Min. |
+| 2 | [Was macht ein CNN anders?](02_cnn_filter_pooling_und_feature_maps.ipynb) | Filter, ReLU, Max-Pooling, kleines CNN, gelernte Antwort | 15 Min. |
+| 3 | [Miniübung](uebungen/01_uebung_kleines_cnn.ipynb) | Formen, Pooling von Hand, zwei Filter | 5–10 Min. |
 
-Die Basispakete bleiben im Haupt-`requirements.txt`. PyTorch wird separat vom offiziellen **CPU-Wheel-Index** installiert, damit keine CUDA-Wheels aus einer allgemeinen Installation ausgewählt werden:
+**Hier endet das Intro.** [Notebook 03](03_transfer_learning_nur_der_kopf.ipynb)
+ist ein optionaler Ausblick für weitere 10–15 Minuten plus ersten Download.
+Es zeigt einen eingefrorenen MobileNet-Backbone und einen neuen Kopf für Ziffer 2 gegen 3.
+Die zweite Übung und die letzten zwei Kurzfragen sind ebenfalls optional.
+
+## Aufbau und Durchführung
+
+Jedes Notebook läuft eigenständig von oben nach unten. Daten laden, aufteilen,
+Netz definieren, trainieren und auswerten stehen direkt in den Zellen.
+Die Trainingsschleife wiederholt sichtbar: Gradienten löschen → Vorhersage →
+Loss → Gradienten berechnen → Gewichte ändern.
+
+Es gibt keine Imports aus `cv_tools.py`, keine eigenen Modellklassen und keine
+versteckten Trainingsfunktionen. Bekannte Schritte werden bewusst wiederholt.
+Die alte Hilfsdatei bleibt für frühere Kopien erhalten; die neuen Materialien
+benötigen sie nicht.
+
+Architektur und Epochenzahl sind vorab festgelegt. 80 % der Bilder dienen dem
+Training, 20 % dem abschließenden Test. Es findet keine Modellwahl am Test statt.
+Für Hyperparametervergleiche sind zusätzliche Validierungsdaten aus dem
+Trainingsanteil nötig. Ein Bildsplit belegt keine Generalisierung auf unbekannte
+schreibende Personen.
+
+## Installation
+
+Im Hauptordner des Kurses unter Windows:
 
 ```powershell
-.venv\Scripts\python.exe -m pip install -r requirements.txt
-.venv\Scripts\python.exe -m pip install -r requirements-cpu.txt
+.venv/Scripts/python.exe -m pip install -r requirements.txt
+.venv/Scripts/python.exe -m pip install -r requirements-cpu.txt
 ```
 
-Die CPU-Datei fixiert die zusammenpassenden getesteten Versionen torch 2.14.1+cpu und torchvision 0.29.1+cpu für Windows/Linux. Alle Beispiele erzwingen `torch.device("cpu")` und prüfen `torch.version.cuda is None`. Es sind keine GPU, kein CUDA-Toolkit und kein torchaudio nötig. Kleine Modelle, zwei CPU-Threads und `DataLoader(num_workers=0)` halten den Einstieg einfach.
+In Jupyter/VS Code diesen Python-Kernel auswählen. Alle Modelle und Tensoren
+bleiben auf der CPU. Die ersten beiden Notebooks benötigen kein torchvision
+und keinen Download. Die Ziffern sind in scikit-learn enthalten.
+Für einen frischen Trainingslauf den Kernel neu starten und alle Zellen ausführen.
 
-## Daten und Laufzeit
+Der optionale Ausblick benötigt torchvision und einmalig die MobileNet-Gewichte.
+Er wird aus dem Kurs-Hauptordner oder direkt aus dem Set-14-Ordner gestartet.
+Gewichte liegen danach in `daten/torch_cache`; Features bleiben nur im Arbeitsspeicher.
 
-Die echten 8×8-Ziffernbilder kommen aus dem bereits installierten scikit-learn-Paket. Wir verwenden diese kleinen Daten statt MNIST, um Download und Trainingszeit niedrig zu halten. Die Bildbeispiele 1/2 laufen offline. MobileNet braucht einmalig etwa 10 MB vortrainierte Gewichte; danach bleiben Gewichte und Features lokal gecacht. Die einmalige Feature-Extraction dauert auf CPU länger als das anschließende Kopftraining.
+## Übungen und Quellen
 
-Die normalen Trainingsbeispiele verwenden getrennte Trainings-/Validierungs-/Testbilder. Der Helfer speichert den Zustand mit dem kleinsten Validierungs-Loss. Der Test ist nicht zur Auswahl von Architektur oder Epoche vorgesehen. Im Transfer-Beispiel werden zusätzlich unveränderte Backbone-Gewichte und BatchNorm-Puffer über einen Hash geprüft.
+- Übung 01 vertieft den CNN-Aufbau ohne weiteres Modelltraining.
+- Übung 02 fragt optional den sichtbaren Transfer-Ablauf ab.
+- Der Fragenkatalog enthält sechs Kernfragen und zwei optionale Fragen.
+- Passende Musterlösungen liegen lokal in `uebungen/loesungen` und bleiben von Git ausgeschlossen.
+- Daten- und Gewichtsquellen: [daten/README.md](daten/README.md).
 
-Alle Notebooks erhalten gespeicherte Outputs. Interaktive Regler benötigen zur Neuberechnung einen laufenden Jupyter-Kernel. Statische Vorschaudiagramme sind auch ohne diesen sichtbar.
+Die Beispiele klassifizieren eine bereits ausgeschnittene Ziffer pro Bild.
+Objekterkennung mit Bounding Boxes gehört nicht zu diesem Intro.
 
-## Bezug zur PDF
+## Frühere Fragen und Antworten
 
-`ML_Set_03_05.pdf`: Bildfilter und CNN-Bausteine auf Seiten 4–6, Klassifikation vs. Objekterkennung auf Seiten 7–8 und Pretraining/Transfer Learning auf Seite 26. Die Beispiele klassifizieren ausgeschnittene Ziffern; eine Bounding-Box-Detektion ist nicht Teil dieser einfachen Übungen. Die weiteren PDF-Themen NLP, Foundation Models und Generative AI sind hier nicht als zusätzliche Aufgaben eingefügt.
-
-Quellen und Daten-/Gewichtshinweise: `daten/README.md`. Musterlösungen bleiben wie in den anderen Sets lokal in `uebungen/loesungen` und werden nicht von Git erfasst.
+Die [ursprünglichen 20 Fragen](uebungen/03_fragen_computer_vision_alt.ipynb) und ihre [alten Musterantworten](uebungen/loesungen/03_loesungen_fragen_computer_vision_alt.ipynb) sind zusätzlich verfügbar. Sie beziehen sich auf den früheren, ausführlicheren Ablauf. Die neuen Kurzfragen und Lösungen bleiben unverändert.
