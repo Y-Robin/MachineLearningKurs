@@ -6,6 +6,9 @@ venv/
 __pycache__/
 *.py[cod]
 
+# Temporäre Dateien
+/tmp/
+
 # Jupyter
 .ipynb_checkpoints/
 
