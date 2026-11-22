@@ -2,6 +2,12 @@
 
 Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhalte sind in **Sets** gegliedert. Jedes Thema wird als Jupyter Notebook erklärt und enthält ausführbare Beispiele sowie kleine Übungen.
 
+## Ohne lokale Installation: Google Colab
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Y-Robin/MachineLearningKurs/blob/main/set1-python-grundlagen/00_start_mit_google_colab.ipynb)
+
+Beginne mit [00 – Start mit Google Colab](set1-python-grundlagen/00_start_mit_google_colab.ipynb). Jedes Kursnotebook und jede Übung hat oben einen eigenen Colab-Button. Führe dort zuerst die Setup-Zelle aus: Sie lädt das gesamte Repository mit Daten und Hilfsdateien, installiert die Bibliotheken und setzt den Arbeitsordner. Sichere bearbeitete Notebooks in Drive und erzeugte Dateien separat; Colab-Laufzeiten sind temporär.
+
 ## Aktueller Inhalt
 
 ```text
@@ -10,6 +16,7 @@ Dieses Repository entsteht Schritt für Schritt zusammen mit dem Kurs. Die Inhal
 ├── requirements.txt
 ├── requirements-cpu.txt
 ├── set1-python-grundlagen/
+│   ├── 00_start_mit_google_colab.ipynb
 │   ├── 01_python_setup_und_bibliotheken.ipynb
 │   ├── 02_python_und_numpy_basics.ipynb
 │   └── uebungen/
