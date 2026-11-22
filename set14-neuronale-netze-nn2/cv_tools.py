@@ -3,6 +3,7 @@ from pathlib import Path
 import copy
 import hashlib
 import json
+import platform
 import numpy as np
 import pandas as pd
 import torch
@@ -169,8 +170,19 @@ def mobilenet_bilder(bilder,weights):
 def extrahiere_features(modell,bilder,batch_size=16):
     """Einmalige eingefrorene Feature-Extraction; Cache ohne gelernte Zielstatistiken."""
     cache_dir=ROOT/'daten/feature_cache'; cache_dir.mkdir(parents=True,exist_ok=True)
+    # CPU-/GPU-Features und unterschiedliche Rechenumgebungen nicht vermischen.
+    umgebung = {
+        'torch': str(torch.__version__), 'cuda': torch.version.cuda,
+        'device': str(DEVICE), 'architektur': platform.machine(),
+        'gpu': torch.cuda.get_device_name(DEVICE) if DEVICE.type == 'cuda' else None,
+        'batch_size': batch_size,
+        'matmul_precision': torch.get_float32_matmul_precision(),
+        'cudnn_tf32': torch.backends.cudnn.allow_tf32,
+        'cudnn_version': torch.backends.cudnn.version(),
+    }
     key=hashlib.sha256(bilder.detach().cpu().contiguous().numpy().tobytes()+
-                       (str(modell.weights)+repr(modell.weights.transforms())+backbone_hash(modell)).encode()).hexdigest()[:20]
+                       (str(modell.weights)+repr(modell.weights.transforms())+backbone_hash(modell)+
+                        json.dumps(umgebung,sort_keys=True)).encode()).hexdigest()[:20]
     path=cache_dir/f'digits_mobilenet_{key}.npz'
     if path.exists():
         with np.load(path,allow_pickle=False) as data: features=torch.from_numpy(data['features'].copy())
