@@ -39,7 +39,8 @@ schreibende Personen.
 
 Eine vorhandene PyTorch-Installation mit CUDA-Unterstützung kann ebenfalls
 verwendet werden. Sie muss nicht durch CPU-Wheels ersetzt werden. Die Beispiele
-rechnen weiterhin auf der CPU. Das Colab-Setup übernimmt vorhandenes PyTorch
+wählen automatisch CUDA, wenn `torch.cuda.is_available()` wahr ist, sonst CPU.
+Das Colab-Setup übernimmt vorhandenes PyTorch
 und torchvision und installiert CPU-Pakete nur, wenn PyTorch fehlt.
 
 Im Hauptordner des Kurses unter Windows:
@@ -49,8 +50,9 @@ Im Hauptordner des Kurses unter Windows:
 .venv/Scripts/python.exe -m pip install -r requirements-cpu.txt
 ```
 
-In Jupyter/VS Code diesen Python-Kernel auswählen. Alle Modelle und Tensoren
-bleiben auf der CPU. Die ersten beiden Notebooks benötigen kein torchvision
+In Jupyter/VS Code diesen Python-Kernel auswählen. Modelle und Rechenbatches
+werden auf das gewählte Gerät verschoben; Plot-Daten zurück auf die CPU.
+Die ersten beiden Notebooks benötigen kein torchvision
 und keinen Download. Die Ziffern sind in scikit-learn enthalten.
 Für einen frischen Trainingslauf den Kernel neu starten und alle Zellen ausführen.
 

@@ -20,14 +20,14 @@ def main():
     elif art=='pytorch':
         import torch
         from model_code import ZiffernNetz,bilder_vorbereiten
-        if torch.version.cuda is not None:raise RuntimeError('Bitte CPU-Wheels installieren.')
+        device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         torch.set_num_threads(2)
-        modell=ZiffernNetz(**config['architektur']).to('cpu')
-        weights=torch.load(ordner/'gewichte.pt',map_location='cpu',weights_only=True)
+        modell=ZiffernNetz(**config['architektur']).to(device)
+        weights=torch.load(ordner/'gewichte.pt',map_location=device,weights_only=True)
         modell.load_state_dict(weights,strict=True)
         modell.eval()
-        x=bilder_vorbereiten(daten,config['pixel_divisor'])
-        with torch.inference_mode():probs=modell(x).softmax(1).numpy()
+        x=bilder_vorbereiten(daten,config['pixel_divisor']).to(device)
+        with torch.inference_mode():probs=modell(x).softmax(1).cpu().numpy()
         labels=probs.argmax(1)
     else:raise ValueError('Unbekannte Modellart')
     json_speichern(output_path,{'labels':labels.tolist(),'wahrscheinlichkeiten':probs.tolist()})

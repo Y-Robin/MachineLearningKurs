@@ -1,4 +1,4 @@
-"""CPU-Werkzeuge für NN2: Daten, Training und eingefrorener MobileNet-Backbone."""
+"""NN2-Werkzeuge mit automatischer CUDA-/CPU-Auswahl."""
 from pathlib import Path
 import copy
 import hashlib
@@ -13,10 +13,12 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
 ROOT=Path(__file__).resolve().parent
-DEVICE=torch.device('cpu')
+DEVICE=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
-def cpu_setup(seed=42):
+def device_setup(seed=42):
+    global DEVICE
+    DEVICE=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     torch.manual_seed(seed)
     np.random.seed(seed)
     torch.set_num_threads(2)
@@ -24,6 +26,10 @@ def cpu_setup(seed=42):
                          'axes.spines.top':False,'axes.spines.right':False,
                          'axes.grid':True,'grid.alpha':0.2,'legend.frameon':False})
     return DEVICE
+
+
+# Für bereits gespeicherte Notebook-Kopien bleibt der alte Name verfügbar.
+cpu_setup = device_setup
 
 
 def ziffern_split(seed=42):
@@ -43,6 +49,7 @@ def loader(x,y,batch_size=64,shuffle=False,seed=42):
 
 @torch.inference_mode()
 def auswerten(modell,daten_loader):
+    modell.to(DEVICE)
     modell.eval()
     verlust=nn.CrossEntropyLoss(reduction='sum')
     loss=0.0; probs=[]; labels=[]
@@ -152,7 +159,7 @@ def mobilenet_bilder(bilder,weights):
     transform=weights.transforms()
     result=[]
     for bild in bilder:
-        array=(bild[0].numpy()*255).round().astype(np.uint8)
+        array=(bild[0].detach().cpu().numpy()*255).round().astype(np.uint8)
         pil=Image.fromarray(array).convert('RGB')
         result.append(transform(pil))
     return torch.stack(result)
@@ -162,7 +169,7 @@ def mobilenet_bilder(bilder,weights):
 def extrahiere_features(modell,bilder,batch_size=16):
     """Einmalige eingefrorene Feature-Extraction; Cache ohne gelernte Zielstatistiken."""
     cache_dir=ROOT/'daten/feature_cache'; cache_dir.mkdir(parents=True,exist_ok=True)
-    key=hashlib.sha256(bilder.contiguous().numpy().tobytes()+
+    key=hashlib.sha256(bilder.detach().cpu().contiguous().numpy().tobytes()+
                        (str(modell.weights)+repr(modell.weights.transforms())+backbone_hash(modell)).encode()).hexdigest()[:20]
     path=cache_dir/f'digits_mobilenet_{key}.npz'
     if path.exists():
@@ -171,7 +178,7 @@ def extrahiere_features(modell,bilder,batch_size=16):
             raise ValueError('Ungültiger Feature-Cache.')
         print('Lokaler Feature-Cache:',path.name)
         return features
-    modell.backbone.eval()
+    modell.backbone.to(DEVICE).eval()
     teile=[]
     # Preprocessing erfolgt batchweise, damit nicht alle 224x224-Bilder im RAM liegen.
     for start in range(0,len(bilder),batch_size):

@@ -239,7 +239,7 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 ```
 
-Für die PyTorch-Beispiele in Set 14 und 15 installierst du unter Windows/Linux zusätzlich die CPU-Pakete:
+Die PyTorch-Beispiele in Set 14 und 15 verwenden automatisch eine verfügbare CUDA-GPU, sonst CPU. Eine vorhandene GPU-Installation von PyTorch/torchvision bleibt nutzbar. Wenn du ohne GPU arbeiten möchtest, installierst du unter Windows/Linux zusätzlich die CPU-Pakete:
 
 ```powershell
 # Windows
