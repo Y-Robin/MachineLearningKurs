@@ -37,6 +37,11 @@ schreibende Personen.
 
 ## Installation
 
+Eine vorhandene PyTorch-Installation mit CUDA-Unterstützung kann ebenfalls
+verwendet werden. Sie muss nicht durch CPU-Wheels ersetzt werden. Die Beispiele
+rechnen weiterhin auf der CPU. Das Colab-Setup übernimmt vorhandenes PyTorch
+und torchvision und installiert CPU-Pakete nur, wenn PyTorch fehlt.
+
 Im Hauptordner des Kurses unter Windows:
 
 ```powershell

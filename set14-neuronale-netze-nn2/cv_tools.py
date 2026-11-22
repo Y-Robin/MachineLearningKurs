@@ -17,8 +17,6 @@ DEVICE=torch.device('cpu')
 
 
 def cpu_setup(seed=42):
-    if torch.version.cuda is not None:
-        raise RuntimeError('Bitte die CPU-Builds aus requirements-cpu.txt installieren.')
     torch.manual_seed(seed)
     np.random.seed(seed)
     torch.set_num_threads(2)
